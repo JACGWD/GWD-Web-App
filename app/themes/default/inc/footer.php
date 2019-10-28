@@ -13,7 +13,7 @@
   <li><a href="#" target="_blank">Facebook</a></li>
 </ul>
 
-<p>All images and web site content &copy; Billy Poppins 2017-<?php echo date("Y"); ?>. All rights reserved for published and unpublished works.</p>
+<p>All images and web site content &copy; <?php echo $graduatingStudentName; ?> 2017-<?php echo date("Y"); ?>. All rights reserved for published and unpublished works.</p>
 </footer>
 
 
