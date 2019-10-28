@@ -1,0 +1,15 @@
+Host your Wordpress site from last semester here.
+
+To make it work:
+
+1. Install new WordPress files into this folder.
+
+2. Go to http://localhost:8080/current-grads/your-name/
+
+3. Create a blank database. (Refer to last year's PDF.)
+
+4. Run the WordPress installer.
+
+5. Install the All in One WP Migration plugin.
+
+6. Upload your backup from last semester.
