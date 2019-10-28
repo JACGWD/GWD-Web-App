@@ -142,6 +142,7 @@ ericg@johnabbott.qc.ca
  - Added reference to 404 error configuration line in .htaccess (line 94)
  - Based 404 error pag on page template
  - Made redirect relative to current server, not graphicandwebdesign.ca
+ - Added auto student name in the copyright notice within the footer.
 
 
  ### v0.81 Beta | October 2019
