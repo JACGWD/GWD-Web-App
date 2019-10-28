@@ -11,9 +11,8 @@
  AUTHOR
  --------------------------------
 
- Eric Girouard
- http://www.heliomedia.com
- eric@heliomedia.com
+Eric Girouard
+ericg@johnabbott.qc.ca
 
 
 
@@ -47,6 +46,8 @@
  B) Search Engine Optimization will be emphasized by concentrating on writing texts to be inserted in PHP template variables. No thinking of the appearance or other technical issues. Just text.
 
  C) Use of a MAMP / WAMP / XAMPP / Bitnami type testing server will allow students to access a WordPress installation with Yoast SEO plugin to help write properly SEO-optimized text content. https://yoast.com/wordpress/plugins/seo/
+
+ Not that some features of 0.82 Beta are designed to be compatible with Bitnami server and may not function at all on other stacks. See .htaccess (lines 1236 - 1253)
 
  D) Students will learn to develop interfaces for code that was written by others, notably professional programmers who use a high level of abstraction in their work.
 
