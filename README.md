@@ -138,6 +138,7 @@ ericg@johnabbott.qc.ca
  - Based 404 error pag on page template
  - Made redirect relative to current server, not graphicandwebdesign.ca
  - Added auto student name in the copyright notice within the footer.
+ - Fixed default high res source set which was set to custom in config.php
 
 
  ### v0.81 Beta | October 2019

@@ -134,7 +134,7 @@ $defaultSrcSetSizes = "(max-width: 48em) 100vw, (min-width: 48.00001em) 45vw, (m
 // The srcset sizes attribute uses media queries and "vm" units (percentages of the width of the viewport, ie entire screen).
 // Adjust values according to your mockup.
 
-$custom_highres_sizes = "(max-width: 48em) 100vw, (min-width: 48.00001em) 100vw, (min-width: 64em) 80vw, (min-width: 90em) 70vw, (min-width: 90em) 25vw,";
+$defaultSrcSetSizes = "(max-width: 48em) 100vw, (min-width: 48.00001em) 100vw, (min-width: 64em) 80vw, (min-width: 90em) 70vw, (min-width: 90em) 25vw,";
 
 
 # ######################################################################
