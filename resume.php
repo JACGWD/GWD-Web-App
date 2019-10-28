@@ -3,14 +3,6 @@ require_once  ($_SERVER["DOCUMENT_ROOT"]."/current-grads/billy-poppins/app/confi
 
 
 # ######################################################################
-#  DEFINE PATHS
-# ######################################################################
-
-// $graduatingStudentFolderName = NULL;
-// This variable is deprecated and will be removed in future version
-
-
-# ######################################################################
 #  HEAD TAGS FOR SEO + SOCIAL
 # ######################################################################
 
