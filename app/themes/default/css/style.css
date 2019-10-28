@@ -1,0 +1,568 @@
+/* ==========================================================================
+
+  DEFAULT CSS version 0.82 Beta  | DEMO FOR PEDAGOGICAL PURPOSES | MIT
+
+  MIT License
+
+Copyright © 2019 JACGWD
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+
+
+  Place font @import rules at top of the CSS stylesheet. They will not work reliably if placed elsewhere in this file.
+  Best practice is to use the <link> tag in the HTML <head> instead. @import rules slow down the browser.
+   ========================================================================== */
+/* @import url(); */
+/*
+
+1. Mobile First - GLOBAL styles that apply to all screen sizes
+... arrange to your liking.
+
+2. Media Queries - Set breakpoints according to your design's needs
+
+  Resolutions (edit as necessary according to your design)
+	48em (768px) and larger
+	90em (1440px) and larger
+	120em (1920px) and larger
+	160em (2560px) and larger
+
+All the min-width media queries follow this pattern:
+
+XXem (YYYpx) and larger
+	XXem Default
+	XXem Portrait
+	XXem Landscape
+
+
+
+3. Utility Classes - solutions for common tasks or problems.
+  3.1 - .browsehappy: for styling a div that appears in older versions of Internet Explorer prompting the user to update their browser. From the HTML 5 Boilerplate project.
+  3.2 - .hide-text for image replacements
+  3.3 - .clearfix: to contain floats. Use if overflow: auto; on the parent element doesn't work well.
+  3.4 - .currentpage: to highlight the current page in the navigation menu
+
+
+
+4. Print Media Query
+  4.1 Styles for the printed page (laser printer). Text should be black and interactive items set to display: none;
+
+  */
+/* ==========================================================================
+     Base styles: opinionated defaults from HTML 5 Boilerplate
+     ========================================================================== */
+html {
+  color: #444;
+  background-color: yellow;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+   * Remove text-shadow in selection highlight:
+   * https://twitter.com/miketaylr/status/12228805301
+   *
+   * Vendor-prefixed and regular ::selection selectors cannot be combined:
+   * https://stackoverflow.com/a/16982510/7133471
+   *
+   * Customize the background color to match your design.
+   */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+   * A better looking default horizontal rule
+   */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+   * Remove the gap between audio, canvas, iframes,
+   * images, videos and the bottom of their containers:
+   * https://github.com/h5bp/html5-boilerplate/issues/440
+   */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+   * Remove default fieldset styles.
+   */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+   * Allow only vertical resizing of textareas.
+   */
+textarea {
+  resize: vertical;
+}
+
+/* ###################################################################### */
+/*  WRITE YOUR DEFAULT CSS RULES HERE. THEY WILL APPLY ("CASCADE") TO EVERYTHING BELOW. */
+
+/* BASELINE CSS FOR ALL SIZE VIEWPORTS. */
+
+/* MOBILE FIRST PHILOSOPHY: START BY CODING CSS FOR A SMALL SCREEN FIRST (MOBILE PHONE) */
+/* AND MAKE YOUR WAY UP TO BIGGER # SCREENS. IN ORDER: MOBILE, TABLET, DESKTOP, HD. */
+
+/* ######################################################################  */
+
+body {}
+
+main {}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* Default all images to responsive behaviour */
+
+
+button {
+  padding: 0 !important;
+}
+/* Remove default browser button styles to properly enable text-indent: 100% in .hide-text image replacement */
+
+
+
+header {}
+
+header p.headerTitle {}
+
+header p.headerSubtitle {}
+
+main p, main ul li {}
+
+/* ###################################################################### */
+/*  NAVIGATION  */
+/* ######################################################################  */
+
+html.no-js nav.navigation ul#menu[hidden] {
+  display: block !important;
+  visibility: visible !important;
+}
+/* Show menu if javascript is off */
+
+a:link {}
+
+a:visited {}
+
+a:hover {}
+
+a:active {}
+
+/* Don't forget LoVeHA! Rule */
+/* Extend as necessary to include longer selectors for anchors in different parts of the page */
+
+
+
+/* ----  6. Form ---- */
+form input {}
+
+form textarea {}
+
+form label {}
+
+form input[type=submit] {}
+
+/* ========================== END MOBILE FIRST ===========================  */
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+
+	*****  START VISUAL MEDIA QUERIES *****
+
+   Media Queries start here. Use them to tweak your design as the screen size gets bigger.
+
+   If you want to change something that appears across all browser screen sizes, code it above, not below this section.
+
+   Anything you write in the CSS stylesheet will inherited by ("cascade to") media queries written below.
+
+   In other words, if your default paragraph color is blue (in the baseline CSS) and you set the paragraph color rule to red in the first media query, then the media queries written below will also display the text as red. You do not need to add the red rule again, it gets inherited.
+
+   Remember, the last CSS rule wins.
+
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   CSS for tablets (768px and above)  |  Feel free to adjust as necessary.
+   ========================================================================== */
+@media only screen and (min-width: 48em) {
+/* CSS rules go here */
+}
+
+@media only screen and (min-width: 48em) and (orientation : portrait) {
+  /* CSS rules go here */
+}
+
+@media only screen and (min-width: 48em) and (orientation : landscape) {
+  /* CSS rules go here */
+}
+
+
+
+
+
+/* ###################################################################### */
+/*  ENABLE HAMBURGER ICON AT 1023px OR SMALLER
+/* ######################################################################  */
+
+@media only screen and (max-width: 63.999em) {
+
+  /* almost 1024px */
+  /* Hide nav button on larger screens */
+  nav.navigation button {
+    height: 32px;
+    width: 32px;
+    display: block;
+    border: none;
+    background-image: url(style_images/hamburger.png);
+  }
+}
+
+
+/* ###################################################################### */
+/*  CSS FOR DESKTOPS (1024PX AND ABOVE)   |  HIDE MENU BUTTON / DISPLAY MENU
+/* ######################################################################  */
+
+@media only screen and (min-width: 64em) {
+  nav.navigation button {
+    display: none
+  }
+
+  #menu {
+    display: block
+  }
+}
+
+
+/* ###################################################################### */
+/*  CSS FOR DESKTOPS (1024PX AND ABOVE)   |  FEEL FREE TO ADJUST AS NECESSARY.
+/* ######################################################################  */
+
+@media only screen and (min-width: 64em) and (orientation : portrait) {
+  /* CSS rules go here */
+}
+
+@media only screen and (min-width: 64em) and (orientation : landscape) {
+  /* CSS rules go here */
+}
+
+
+/* ###################################################################### */
+/*  CSS FOR DESKTOPS (1440PX AND ABOVE)   |  FEEL FREE TO ADJUST AS NECESSARY.
+/* ######################################################################  */
+
+@media only screen and (min-width: 90em) {
+/* CSS rules go here */
+}
+
+@media only screen and (min-width: 90em) and (orientation : portrait) {
+  /* CSS rules go here */
+}
+
+@media only screen and (min-width: 90em) and (orientation : landscape) {
+  /* CSS rules go here */
+}
+
+
+
+/* ==========================================================================
+   CSS for HD desktops (1920px (27" iMac is 2560px) and above)   |  Feel free to adjust as necessary.
+   ========================================================================== */
+@media only screen and (min-width: 120em) {
+  /* CSS rules go here */
+}
+
+@media only screen and (min-width: 120em) and (orientation : portrait) {
+  /* CSS rules go here */
+}
+
+@media only screen and (min-width: 120em) and (orientation : landscape) {
+  /* CSS rules go here */
+}
+
+
+/* ==========================================================================
+   CSS for HD desktops (2560px (27" 5k iMac is 5120px) and above)   |  Feel free to adjust as necessary.
+   ========================================================================== */
+@media only screen and (min-width: 160em) {
+  /* CSS rules go here */
+}
+
+@media only screen and (min-width: 160em) and (orientation : portrait) {
+  /* CSS rules go here */
+}
+
+@media only screen and (min-width: 160em) and (orientation : landscape) {
+  /* CSS rules go here */
+}
+
+
+/* ==========================================================================
+   END VISUAL MEDIA QUERIES
+   ========================================================================== */
+
+
+
+
+
+
+/* ==========================================================================
+  Utility Classes
+========================================================================== */
+
+
+/* ==========================================================================
+     Browser Upgrade Prompt for Users Still on Microsoft Internet Explorer
+     ========================================================================== */
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/*
+      Old School Image Replacement Technique
+      .hide-text for image replacements
+      See: http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/
+  */
+.hide-text {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+/*
+   * Hide visually and from screen readers
+   */
+[hidden], .hidden {
+  display: none !important;
+}
+
+/* [hidden] { display: none; } */
+/* Useful only for older browsers */
+/* See: https://css-tricks.com/the-hidden-attribute-is-visibly-weak/  */
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+  * Extends the .sr-only class to allow the element
+  * to be focusable when navigated to via the keyboard:
+  * https://www.drupal.org/node/897638
+  */
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+  * Hide visually and from screen readers, but maintain layout
+  */
+.invisible {
+  visibility: hidden;
+}
+
+/*
+  * Clearfix: contain floats
+  *
+  * For modern browsers
+  * 1. The space content is one way to avoid an Opera bug when the
+  *    `contenteditable` attribute is included anywhere else in the document.
+  *    Otherwise it causes space to appear at the top and bottom of elements
+  *    that receive the `clearfix` class.
+  * 2. The use of `table` rather than `block` is only necessary if using
+  *    `:before` to contain the top-margins of child elements.
+  */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* The "currentpage" class is automatically added to the *anchor tag* of the current page in the main navigation. */
+/* Useful for UX reasons: lets the reader know on which page of the nav they are on */
+.currentpage {
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+
+
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+@media print {
+
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster */
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " ("attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " ("attr(title) ")";
+  }
+
+  /*
+        * Don't show links that are fragment identifiers,
+        * or use the `javascript:` pseudo protocol
+        */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+        * Printing Tables:
+        * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+        */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}

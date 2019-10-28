@@ -1,0 +1,267 @@
+<!doctype html>
+<!-- forces the browser into web standards mode -->
+
+<!-- Warning: All these comments may force the UTF-8 character set definition (line #36) too far down for valiation. Please delete all these comments if you want your code to validate.  -->
+
+<html itemscope itemtype="http://schema.org/Article" lang="en" class="no-js"> 
+
+<!-- lang="en" specify language for SEO -->
+
+<!-- By default the HTML tag gets a class of "no javascript" (.no-js). If javascript is enabled in the browser, Modernizr will automatically change it to whatever the browser is capable of. Use Firebug or any web inspector tool to see this in action. -->
+
+    <head>
+    <!-- instructions for the browser start here -->
+
+        <meta charset="utf-8">
+        <!-- UTF is important for non-English characters -->
+		<!-- utf-8 line is important for validation -->
+
+
+<!-- Start tags important for *basic* Search Engine Optimization here -->
+                
+        <title></title>
+        <!-- title tag: important for SEO, bookmarks, tab/window label -->
+		<!-- 70 characters or less, use keywords -->
+
+
+        <meta name="description" content="">
+        <!-- description tag: important for SEO -->
+		<!-- 155 characters or less, use keywords -->
+        
+<!-- End tags important for *basic* Search Engine Optimization here -->
+        
+        
+        
+<!-- Start tags important for *SOCIAL* Search Engine Optimization here -->
+        
+        
+<!-- START Schema.org markup for Google+ -->
+        <meta itemprop="name" content="The Name or Title of web site page Here">
+        
+        <meta itemprop="description" content="This is the page description">
+        <!-- Short description - keep it shorter than 200 characters -->
+        
+        <meta itemprop="image" content="http://www.example.com/image.jpg">
+        <!-- The URL of an image - optimal size is 180 x 120. If bigger, Google Plus will downsize it. If too small, it won't be displayed -->
+        
+        <link rel="author" href="https://plus.google.com/[YOUR PERSONAL G+ PROFILE HERE]"/>
+        <!-- Link to your Google+ profile page -->
+        
+<!-- END Schema.org markup for Google+ -->
+        
+        
+<!-- START Twitter Card data -->
+        <meta name="twitter:card" content="gallery">
+        <!-- The card type, which will be one of “summary”, “summary_large_image”, “photo”, “gallery”, “product”, “app”, or “player”. -->
+        
+        <meta name="twitter:title" content="Page Title">
+        <!-- Title of content (max 70 characters) -->
+        
+        <meta name="twitter:description" content="Page description">
+        <!-- Description of content (maximum 200 characters) -->
+        
+        <meta name="twitter:creator" content="@author_handle">
+        <!-- @username for the content creator / author. -->
+        
+        <meta name="twitter:image0" content="http://www.example.com/media/content_images/1.jpg">   
+        <meta name="twitter:image1" content="http://www.example.com/media/content_images/2.jpg">   
+        <meta name="twitter:image2" content="http://www.example.com/media/content_images/3.jpg">   
+        <meta name="twitter:image3" content="http://www.example.com/media/content_images/4.jpg">
+        <!-- URL of image to use in the card. Image must be less than 1MB in size -->
+        <!-- Twitter summary card with large image must be at least 280x150px -->
+
+        
+<!-- END Twitter Card data -->
+        
+        
+        
+        
+        
+        
+<!-- Open Graph data for Facebook -->
+        <meta property="og:title" content="Title Here" />
+        <!-- 90 characters - The title should not have branding or extraneous information. -->
+        
+        <meta property="og:type" content="website" />
+        <!-- Common types are: website, profile, object and article -->
+        <!-- See https://developers.facebook.com/docs/reference/opengraph -->
+        
+        <meta property="og:url" content="http://www.example.com/" />
+        <!-- This is simply the URL of the page -->
+        
+        <meta property="og:image" content="http://example.com/image.jpg" />
+        <!-- The image that Facebook will show in the screenshot of the content -->
+        <!-- Ideally 1200px Square for compatibility across multiple sites -->
+        
+        <meta property="og:description" content="Description Here" />
+        <!-- Maximum of 297 characters - About two sentences long. -->
+        
+        <meta property="og:site_name" content="Site Name, i.e. Moz" />
+        <!-- og:site_name - The name of your website. Not the URL, but the name. (i.e. "IMDb" not "imdb.com".) -->
+        
+        <meta property="article:section" content="Article Section" />
+        <!-- The section of your website to which the article belongs, such as 'Web' or 'Print' -->
+        
+        <meta property="article:tag" content="Tag" />
+        <!-- A keyword relevant to the article, repeat this meta tag as necessary -->
+        
+<!-- End tags important for *SOCIAL* Search Engine Optimization here -->
+
+       
+        
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- step 1 in designing for mobile -->
+
+
+        <link rel="stylesheet" href="../../3-mobile-style/_documentation/css/style.css">
+        <!-- use only 1 stylesheet for all media: screen or print -->
+
+
+        <script src="../../3-mobile-style/_documentation/js/modernizr-2.6.2.min.js"></script>
+        <!-- Enables HTML 5 in older browsers | go to modernizr.com -->
+		<!-- Modernizr should be only javascript in <head>, all others go before </body> to make the web page load faster -->
+
+
+     <!-- instructions for the browser end here -->   
+    </head>
+    
+    
+    
+    
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <!-- If your reader has IE 6 he will get a reminder that it might be a real good time to upgrade.  -->
+        
+        
+        <nav>
+		<!-- HTML 5 always put all navigation inside a nav tag -->
+			<ul>
+				<li><a href="index.php">Home</a></li>	
+				<!-- etc etc -->			
+			</ul>
+		</nav>
+        
+        <!-- Place nav first for mobile -->
+        
+        <!-- 
+        
+        On larger screens, swap the position of the nav and header by using 
+             
+        nav { position: relative; top: XXXpx; }
+             
+        header { position: relative; top: -YYYpx; height: 100px;}
+             
+        Where the positioning value is at least equal to the height + margin + padding of header.     
+             
+             
+         -->
+        
+        
+		<header class="hide-text">Branding Goes Here</header>
+		<!-- delete .hide-text class if you are not doing an image replacement -->
+		<!-- HTML 5 header tag, same as div id="header" -->
+		
+		<!-- Note: In HTML 5, the page must have a header and footer BUT some parts of a page (like <article> or <aside> for example) can ALSO have header and footer tags inside them. Useful for blog design, not really needed in eportfolio. We just don't have that much content. -->
+		
+			
+	
+		
+    <h1>Print Portfolio</h1>
+
+<!-- /////////////// Main Content STARTS here ////////////  -->	
+	
+	<main>
+		<!-- article tag can replace main or div, if content is similar to articles in a magazine -->
+			
+ 
+    <p>HTML content above the thumbnails goes here.</p>
+
+<figure class="thumbnail">
+
+  <a href="/w15_eportfolio/girouard_eric/portfolio/print/business-card.php">
+  <!-- Start with link destination -->
+  
+  
+  <!-- srcset defines multiple images (small, medium, large, etc) that the browser can choose from depending on the window size. Regular SRC is at the end for browsers that don't understand srcset -->
+      <img srcset="/w15_eportfolio/girouard_eric/media/content_images/thumbnails/sample_200.jpg,
+                  /w15_eportfolio/girouard_eric/media/content_images/thumbnails/sample_400.jpg, 
+                  /w15_eportfolio/girouard_eric/media/content_images/thumbnails/sample_600.jpg"
+      
+      src="/w15_eportfolio/girouard_eric/media/content_images/thumbnails/sample_400.jpg"
+       
+      alt="This is good alt text">
+
+  </a>
+<!-- Close link -->
+
+
+  <figcaption class="thumb-caption">
+  <!-- Caption is clickable, this helps SEO -->
+  <a href="/w15_eportfolio/girouard_eric/portfolio/print/business-card.php">
+
+   Business card 1 designed for Acme Inc</a>
+
+  </figcaption>
+
+</figure>
+
+
+<!-- Repeat as many thumbnails as necessary -->
+        
+        
+	</main>
+		<!-- Main article should come first, before the sidebar, because it will be first when you see the site on mobile. On desktop, you float the article left and the aside right so they display side-by-side. -->
+        
+        
+    <aside>Sidebar tag</aside>
+		
+                
+    <footer>Footer content goes here; ie your © symbol (&copy;)</footer>
+		<!-- Main footer of the web site -->
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+        <!-- Load JQuery library -->
+        <!-- First link gets it from Google's servers (faster than Bluehost). -->
+        <!-- Second link loads JQuery from your site if first link fails -->
+        
+        <!--
+        What's up with the link that starts with // ?
+        
+        This prevents that awful “This Page Contains Both Secure and Non-Secure Items” error message in IE, keeping all your browser requests within the same connection type (http or https).
+        
+        If the browser is viewing that current page in through HTTPS, then it’ll request that asset (image, css file, javascript file, whatever) with the HTTPS protocol, otherwise it’ll typically request it with HTTP. 
+
+Of course, if you’re viewing the file locally, it’ll try to request the file with the file:// protocol.
+        -->
+        
+        
+        
+        
+        <!-- Google Analytics javascript code starts below. Required.  -->
+        <!-- go to google.com/analytics/ to get your own UA-XXXXX-X code. -->
+
+        
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+        
+        <!--
+        Why is the Google Analytics code at the bottom? Google recommends it be placed the head!
+        
+		The advantage to placing it in the head is that you will track a user's pageview even if they leave the page before it has been fully loaded. However, putting the code at the bottom keeps all the scripts together and reinforces that scripts at the bottom are the right move.
+        
+        -->
+    </body>
+</html>

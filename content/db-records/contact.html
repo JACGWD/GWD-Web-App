@@ -1,0 +1,18 @@
+<h2>Email</h2>
+<form action="<?php echo $formAction ?>" method="post">
+<label for="tswname">Name</label>
+<input type="text" name="fullname" id="tswname" size="25" />
+<label for="tswemail">Email address</label>
+<input type="text" id="tswemail" name="email" size="25" />
+<label for="tswcomments">Comments</label>
+<textarea rows="15" cols="45" name="comments" id="tswcomments"></textarea>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<noscript>
+<iframe src="http://api.recaptcha.net/noscript?k=6LeWR48UAAAAADtrbOWt1joGdEt9KYypMAG9jv1T" height="300" width="500" frameborder="0" title="CAPTCHA test"></iframe>
+<label for="tswcaptcha">Copy and paste the code provided in above box here:</label>
+<textarea name="recaptcha_challenge_field" id="tswcaptcha" rows="3" cols="40"></textarea>
+<input type="hidden" name="recaptcha_response_field" value="manual_challenge" />
+</noscript>
+<div class="g-recaptcha" data-sitekey="6LeWR48UAAAAADtrbOWt1joGdEt9KYypMAG9jv1T"></div>
+<input type="submit" value="Send Feedback" />
+</form>

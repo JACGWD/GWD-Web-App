@@ -1,0 +1,2 @@
+allow_url_fopen = ON
+allow_url_include = ON
