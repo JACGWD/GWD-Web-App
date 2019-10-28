@@ -1,11 +1,11 @@
 <?php
- //  --------  CONFIG FILE VERSION 8.12 Beta -------------------- //
+#  --------  CONFIG FILE VERSION 8.12 Beta -------------------- #
 
 
 
- # ######################################################################
- #  IMPORTANT *** DELETE BEFORE GOING LIVE *** ON GWD.CA
- # ######################################################################
+# ######################################################################
+#  IMPORTANT *** DELETE BEFORE GOING LIVE *** ON GWD.CA
+# ######################################################################
 
 error_reporting(E_ALL);
 	ini_set('display_errors', 1);
@@ -127,6 +127,9 @@ $defaultSrcSetSizes = "(max-width: 48em) 100vw, (min-width: 48.00001em) 45vw, (m
 // Smaller than 48em = 768px == full screen images (single column)
 // Wider than 48em = 768px == half-width screen images (dual column)
 // Wider than 64em = 1024px == third-width screen images (three columns)
+// 23.4375em = 375px
+// 48em = 768px
+// 64em = 1024px
 // 90em = 1440px
 // 100em == 1600px
 // 120em == 1920px
@@ -134,7 +137,8 @@ $defaultSrcSetSizes = "(max-width: 48em) 100vw, (min-width: 48.00001em) 45vw, (m
 // The srcset sizes attribute uses media queries and "vm" units (percentages of the width of the viewport, ie entire screen).
 // Adjust values according to your mockup.
 
-$defaultSrcSetSizes = "(max-width: 48em) 100vw, (min-width: 48.00001em) 100vw, (min-width: 64em) 80vw, (min-width: 90em) 70vw, (min-width: 90em) 25vw,";
+# Set the DEFAULT size of your HIGH RES images here.
+$custom_highres_sizes = "(max-width: 48em) 100vw, (min-width: 64em) 80vw, (min-width: 90em) 70vw, (min-width: 120em) 60vw,";
 
 
 # ######################################################################
@@ -165,9 +169,9 @@ if ($SwitchRoot) {$rootImgFolder = $_SERVER["DOCUMENT_ROOT"] ."/current-grads/" 
 
 
 
-	# ######################################################################
-	#   RELATIVE PATHS FOR HTML PATHS  // DO NOT EDIT
-	# ######################################################################
+# ######################################################################
+#   RELATIVE PATHS FOR HTML PATHS  // DO NOT EDIT
+# ######################################################################
 
 if ($SwitchRoot) {$portfolioImgFolder = getCurrentServer() ."current-grads/" . $graduatingStudentFolderName ."content/img/";} else {$portfolioImgFolder = getCurrentServer() ."content/img/";}
 
