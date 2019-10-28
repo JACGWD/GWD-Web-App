@@ -27,7 +27,7 @@ $SwitchRoot = TRUE;
 # ######################################################################
 
 $graduatingStudentFolderName = "billy-poppins/";
-// firstname-lastname (all lowercase), with trailing slash: john-smith/
+// firstname-lastname (all lowercase), ** with trailing slash: john-smith/ **
 
 $graduatingStudentName = "Billy Poppins";
 // When we need to print your name on a page, such as in the footer
@@ -138,7 +138,7 @@ $defaultSrcSetSizes = "(max-width: 48em) 100vw, (min-width: 48.00001em) 45vw, (m
 // Adjust values according to your mockup.
 
 # Set the DEFAULT size of your HIGH RES images here.
-$custom_highres_sizes = "(max-width: 48em) 100vw, (min-width: 64em) 80vw, (min-width: 90em) 70vw, (min-width: 120em) 60vw,";
+$custom_highres_sizes = "(max-width: 48em) 100vw, (min-width: 64em) 80vw, (min-width: 90em) 70vw, (min-width: 120em) 60vw";
 
 
 # ######################################################################
