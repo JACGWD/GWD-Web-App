@@ -60,11 +60,6 @@
 
 // ------------- CONFIGURABLE SECTION ------------------------
 
-// $mailto = 'ericg@johnabbott.qc.ca' ;
-// $subject = "Feedback Form" ;
-// $formurl = "https://graphicandwebdesign.ca/contact.php" ;
-// $thankyouurl = "https://graphicandwebdesign.ca/contact/thank-you.php" ;
-// $errorurl = "https://graphicandwebdesign.ca/contact/error.php" ;
 $want_tel_field = 0;
 $want_addr_field = 0;
 
@@ -76,7 +71,7 @@ $use_envsender = 0;
 $use_sendmailfrom = 0;
 $smtp_server_win = '' ;
 $use_webmaster_email_for_from = 0;
-$my_recaptcha_private_key = '6LeWR48UAAAAANOx30JNn_Tg3S1maGYjeDydoSo2' ;
+$my_recaptcha_private_key = NULL;
 
 // -------------------- END OF CONFIGURABLE SECTION ---------------
 
