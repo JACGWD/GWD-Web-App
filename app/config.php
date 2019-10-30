@@ -160,13 +160,31 @@ if ($SwitchRoot) {$rootTemplates_folder = $_SERVER["DOCUMENT_ROOT"] ."/current-g
 if ($SwitchRoot) {$rootIncludes_folder = $_SERVER["DOCUMENT_ROOT"] ."/current-grads/" . $graduatingStudentFolderName ."app/themes/". $theme . "/inc/";} else {
 $rootIncludes_folder = $_SERVER["DOCUMENT_ROOT"] ."/app/themes/". $theme . "/inc/";}
 
+
+# ######################################################################
+#   ABSOLUTE PATHS FOR ROOT-LEVEL CONTENT FOLDERS  // DO NOT EDIT
+# ######################################################################
+
+if ($SwitchRoot) {$rootAudioFolder = $_SERVER["DOCUMENT_ROOT"] ."/current-grads/" . $graduatingStudentFolderName ."content/audio/";} else {
+	$rootAudioFolder = $_SERVER["DOCUMENT_ROOT"] ."/content/audio/";}
+
 if ($SwitchRoot) {$rootHTMLFolder = $_SERVER["DOCUMENT_ROOT"] ."/current-grads/" . $graduatingStudentFolderName ."content/db-records/";} else {
 $rootHTMLFolder = $_SERVER["DOCUMENT_ROOT"] ."/content/db-records/";}
-
 
 if ($SwitchRoot) {$rootImgFolder = $_SERVER["DOCUMENT_ROOT"] ."/current-grads/" . $graduatingStudentFolderName ."content/img/";} else {
 	$rootImgFolder = $_SERVER["DOCUMENT_ROOT"] ."/content/img/";}
 
+if ($SwitchRoot) {$rootPDFFolder = $_SERVER["DOCUMENT_ROOT"] ."/current-grads/" . $graduatingStudentFolderName ."content/pdf/";} else {
+	$rootPDFFolder = $_SERVER["DOCUMENT_ROOT"] ."/content/pdf/";}
+
+if ($SwitchRoot) {$rootSocialFolder = $_SERVER["DOCUMENT_ROOT"] ."/current-grads/" . $graduatingStudentFolderName ."content/social/";} else {
+$rootSocialFolder = $_SERVER["DOCUMENT_ROOT"] ."/content/social/";}
+
+if ($SwitchRoot) {$rootSWFFolder = $_SERVER["DOCUMENT_ROOT"] ."/current-grads/" . $graduatingStudentFolderName ."content/swf/";} else {
+$rootSWFFolder = $_SERVER["DOCUMENT_ROOT"] ."/content/swf/";}
+
+if ($SwitchRoot) {$rootVideoFolder = $_SERVER["DOCUMENT_ROOT"] ."/current-grads/" . $graduatingStudentFolderName ."content/video/";} else {
+$rootVideoFolder = $_SERVER["DOCUMENT_ROOT"] ."/content/video/";}
 
 
 # ######################################################################

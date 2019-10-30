@@ -1,6 +1,6 @@
  # GWD ePortfolio app
  Demo for pedagogical purposes | MIT  
- Version 0.82 Beta
+ Version 0.821 Beta
  Fall 2019 version of the JAC GWD ePortfolio web app
 
 
@@ -118,6 +118,8 @@ ericg@johnabbott.qc.ca
  ### v0.821 Beta | October 30 2019
 - Added position: relative to all elements in simple-css-reset.css
 - Added "old-" prefix to private and public recaptcha keys
+- Added extra variable names for all content types in /content/
+- Added these variables to /app/devtools/variables.php
 
 
 
