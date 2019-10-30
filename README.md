@@ -115,6 +115,10 @@ ericg@johnabbott.qc.ca
  --------------------------------
  CHANGE HISTORY
  --------------------------------
+ ### v0.821 Beta | October 30 2019
+- Added position: relative to all elements in simple-css-reset.css
+- Added "old-" prefix to private and public recaptcha keys
+
 
 
  ### v0.82 Beta | October 2019
