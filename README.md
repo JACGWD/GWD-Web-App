@@ -1,6 +1,6 @@
  # GWD ePortfolio app
  Demo for pedagogical purposes | MIT  
- Version 0.821 Beta
+ Version 0.822 Beta
  Fall 2019 version of the JAC GWD ePortfolio web app
 
 
@@ -115,12 +115,16 @@ ericg@johnabbott.qc.ca
  --------------------------------
  CHANGE HISTORY
  --------------------------------
+ ### v0.822 Beta | November 11 2019
+- Added a wrapper <div id="thumbnails"> around the thumbnails in thumbnails.php to enable CSS grid layout within main
+- Removed the !important from the [hidden] attribute to solve complex overrides in students CSS authoring
+
+
  ### v0.821 Beta | October 30 2019
 - Added position: relative to all elements in simple-css-reset.css
 - Added "old-" prefix to private and public recaptcha keys
 - Added extra variable names for all content types in /content/
 - Added these variables to /app/devtools/variables.php
-
 
 
  ### v0.82 Beta | October 2019
@@ -168,8 +172,6 @@ ericg@johnabbott.qc.ca
  - Updated layout of config.php
 
 
-
-
  ### v0.8 Alpha | September 2019  
  - Simplified code.
  - Removed old scripts included in other js files: picturefill.js, swfobject.
@@ -186,6 +188,7 @@ ericg@johnabbott.qc.ca
  - Renamed /media folder to /content
  - Added content/html folder for containing html data as if it was a database request
 
+
  ### v0.66 Beta | March 6, 2015  
  - Changed 'dpi' units in media queries within style.css to 'dppx' units. Because in CSS 'dpi' means dots-per-CSS-inch, not dots-per-physical-inch, so does not correspond to the actual 'dpi' of a screen.  
  - Added pixel density 3 media queries for iPhone 6+ within style.css.  
@@ -196,13 +199,16 @@ ericg@johnabbott.qc.ca
  - Added sections and comments in config.php  
  - Added TRUE / FALSE switch to enable Normalize.css instead of simple-css-reset.css in config.php.  
 
+
  ### v0.65 | February 9, 2015  
  - Edited inc/header.php to remove hard coded w15_eportfolio folder name and replaced with $currentGradsFolder variable.
  - Added Retina media queries to new default.css.
  - Added multiple theme support.
 
+
  ### v0.64 | February 3, 2015
  - Added customizeable class for thumbnails figure tag on an individual tag basis.
+
 
  ### v0.63 | February 2, 2015  
  - Added if/else check to add extra classes to the figure tag: both thumbnail and highres.
@@ -211,9 +217,11 @@ ericg@johnabbott.qc.ca
  - Moved comments to content pages instead of documentation.
  - Deleted commented php folder from documentation.
 
+
  ### v0.62 | January 30, 2015  
  - Added if/else check for pagination.
  - Previous/Next links will not appear if the variable is set to NULL.
+
 
  ### v0.61 | January 21, 2015  
  - Add hooks for classes for <body> and <main>.
@@ -225,6 +233,7 @@ ericg@johnabbott.qc.ca
  - Prepare for Beta release.
  - Added pagination metatags and <div class="pagination"> on portfolio-item.php.
  - Moved $OgURL and $OgSiteName variable definitions to config.php because they do not need to be set on a page per page basis.
+
 
  ### v0.5 | January 17, 2015  
  - Added Social + SEO compatibility for Schema.org, Facebook OpenGraph, Google Authorship and Twitter Cards.

@@ -14,9 +14,10 @@ $clean_top_main_content = addslashes($raw_top_main_content);
 $top_main_content = stripslashes($clean_top_main_content);
 
 echo($top_main_content);
+?>
+<div id="thumbs">
 
-
-foreach ( $thumbnails as $single_thumb ) {
+<?php foreach ( $thumbnails as $single_thumb ) {
 
     echo '<figure class="thumbnail';
 
@@ -54,8 +55,11 @@ foreach ( $thumbnails as $single_thumb ) {
     echo "\r\n";
 
 }
+?>
 
-   $clean_bottom_main_content = addslashes($raw_bottom_main_content);
+</div>
+
+<?php $clean_bottom_main_content = addslashes($raw_bottom_main_content);
    $bottom_main_content = stripslashes($clean_bottom_main_content);
 
    echo($bottom_main_content);

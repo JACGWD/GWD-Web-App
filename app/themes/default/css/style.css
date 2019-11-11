@@ -1,6 +1,6 @@
 /* ==========================================================================
 
-  DEFAULT CSS version 0.821 Beta  | DEMO FOR PEDAGOGICAL PURPOSES | MIT
+  DEFAULT CSS version 0.822 Beta  | DEMO FOR PEDAGOGICAL PURPOSES | MIT
 
   MIT License
 
@@ -402,7 +402,7 @@ form input[type=submit] {}
    * Hide visually and from screen readers
    */
 [hidden], .hidden {
-  display: none !important;
+  display: none;
 }
 
 /* [hidden] { display: none; } */
