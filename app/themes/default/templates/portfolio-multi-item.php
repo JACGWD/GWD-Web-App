@@ -10,7 +10,7 @@ require ($rootIncludes_folder. "header.php"); ?>
 
 
 <figure class="multi highres<?php if (isset($multiHiResClass)) {echo ' '. $multiHiResClass;} else {echo NULL;} ?>">
-
+<div class="images">
 <?php foreach ( $multiHighRes as $hiResImageSetPart ) {
 
   echo "<img srcset=\"" .$portfolioImgFolder. $hiResImageSetPart['multiHiRes_image_1x'].", ". "\r\n".
@@ -22,9 +22,10 @@ require ($rootIncludes_folder. "header.php"); ?>
 							  echo "\"". "\r\n\r\n";
 							  echo
 							   "src=\"" .$portfolioImgFolder. $hiResImageSetPart['multiHiRes_image_default']. "\"".  "\r\n\r\n". " alt=\"" .$hiResImageSetPart['multiHiRes_alt'] . "\"" . "/>"."\r\n";
-echo "\r\n\r\n";
-}
-    echo "  <figcaption class=\"multihires-caption\">"."\r\n";
+echo "\r\n";
+};
+echo "</div>"."\r\n";
+echo "<figcaption class=\"multihires-caption\">"."\r\n";
 
 
 	echo "   " . $multi_highres_figcaption ."\r\n";
@@ -34,8 +35,6 @@ echo "\r\n\r\n";
     echo "</figure>"."\r\n";
 
     echo "\r\n";
-
-
 ?>
 
 <div class="pagination">
