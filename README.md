@@ -115,7 +115,7 @@ ericg@johnabbott.qc.ca
  --------------------------------
  CHANGE HISTORY
  --------------------------------
- ### v0.831 Beta | November 12 2019
+ ### v0.831 Beta | November 13 2019
  - Added div.images to template: portfolio-multi-item.php.
 
 
