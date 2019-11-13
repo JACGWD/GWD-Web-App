@@ -1,6 +1,6 @@
  # GWD ePortfolio app
  Demo for pedagogical purposes | MIT  
- Version 0.83 Beta
+ Version 0.831 Beta
  Fall 2019 version of the JAC GWD ePortfolio web app
 
 
