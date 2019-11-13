@@ -115,6 +115,10 @@ ericg@johnabbott.qc.ca
  --------------------------------
  CHANGE HISTORY
  --------------------------------
+ ### v0.831 Beta | November 12 2019
+ - Added div.images to template: portfolio-multi-item.php.
+
+
  ### v0.83 Beta | November 12 2019
  - By request, I added a multiple image portfolio page template: portfolio-multi-item.php.
  - Created the new "sample-multi.php" page accordingly.
