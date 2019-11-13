@@ -1,6 +1,6 @@
  # GWD ePortfolio app
  Demo for pedagogical purposes | MIT  
- Version 0.822 Beta
+ Version 0.83 Beta
  Fall 2019 version of the JAC GWD ePortfolio web app
 
 
@@ -115,6 +115,13 @@ ericg@johnabbott.qc.ca
  --------------------------------
  CHANGE HISTORY
  --------------------------------
+ ### v0.83 Beta | November 12 2019
+ - By request, I added a multiple image portfolio page template: portfolio-multi-item.php.
+ - Created the new "sample-multi.php" page accordingly.
+ - Added a new variable for the sizes attribute: $defaultMultiSrcSetSizes for the portfolio-multi-item.php page.
+ - Added sample-multi.php to /web-portfolio and /print-portfolio folders.
+
+
  ### v0.822 Beta | November 11 2019
 - Added a wrapper <div id="thumbnails"> around the thumbnails in thumbnails.php to enable CSS grid layout within main
 - Removed the !important from the [hidden] attribute to solve complex overrides in students CSS authoring

@@ -140,6 +140,8 @@ $defaultSrcSetSizes = "(max-width: 48em) 100vw, (min-width: 48.00001em) 45vw, (m
 # Set the DEFAULT size of your HIGH RES images here.
 $custom_highres_sizes = "(max-width: 48em) 100vw, (min-width: 64em) 80vw, (min-width: 90em) 70vw, (min-width: 120em) 60vw";
 
+# Set the DEFAULT size of your MULTIPLE HIGH RES IMAGES ON ONE PAGE here.
+$defaultMultiSrcSetSizes = "(max-width: 48em) 100vw, (min-width: 64em) 40vw, (min-width: 90em) 35vw, (min-width: 120em) 30vw";
 
 # ######################################################################
 #   SET THE BASE PATH  // DO NOT EDIT
