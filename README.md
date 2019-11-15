@@ -9,7 +9,8 @@
  --------------------------------
 
 Eric Girouard
-ericg@johnabbott.qc.ca
+
+@jacgfxgeek
 
 
 

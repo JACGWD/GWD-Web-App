@@ -1,5 +1,5 @@
 <?php
-#  --------  CONFIG FILE VERSION 8.12 Beta -------------------- #
+#  --------  CONFIG FILE VERSION 8.31 Beta -------------------- #
 
 
 
