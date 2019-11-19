@@ -1,7 +1,7 @@
  # GWD ePortfolio app
  Demo for pedagogical purposes | MIT  
  Version 0.832 Beta
- 
+
  Fall 2019 version of the JAC GWD ePortfolio web app
 
 
@@ -25,14 +25,16 @@ Eric Girouard
 
  This web application is intended to be used pedagogically as a technological stepping-stone in between hand-coded web sites and PHP/MySQL applications such as WordPress.
 
- By moving all the HTML and CSS to the "theme" folder, all that remains in the individual PHP pages are:
+ By moving the HTML templates and CSS to the "theme" folder, all that remains in the individual PHP pages are:
 
+ - metadata (for SEO, OpenGraph and Twitter)
  - links to which template is to be used
- - the text content (which forces students to concentrate on what they are writing as well as Search Engine Optimization).
+ - some optional code or text content
+ - links to basic HTML-marked-up text content stored in the /content/db-records folder (which forces students to concentrate on what they are writing as well as Search Engine Optimization)
 
  In this sense the content PHP pages only include the information that would be stored in a database. Connecting to databases through PHP would be the subject of another more advanced course.
 
- The PHP templates are built as a series of includes, as this is the basis for coding complex web applications (once again, such as WordPress).
+ The PHP templates are built as a series of included components, as this is the basis for coding complex web applications (once again, such as WordPress).
 
 
 
@@ -46,7 +48,7 @@ Eric Girouard
 
  C) Use of a MAMP / WAMP / XAMPP / Bitnami type testing server will allow students to access a WordPress installation with Yoast SEO plugin to help write properly SEO-optimized text content. https://yoast.com/wordpress/plugins/seo/
 
- Note that some features of 0.82 Beta are designed to be compatible with Bitnami server and may not function at all on other stacks. See .htaccess (lines 1236 - 1253)
+ Note that some features of 0.832 Beta are designed to be compatible with Bitnami server and may not function at all on other stacks. See .htaccess (lines 1236 - 1253)
 
  D) Students will learn to develop interfaces for code that was written by others, notably professional programmers who use a high level of abstraction in their work.
 
