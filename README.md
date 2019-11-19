@@ -1,6 +1,6 @@
  # GWD ePortfolio app
  Demo for pedagogical purposes | MIT  
- Version 0.831 Beta
+ Version 0.832 Beta
  Fall 2019 version of the JAC GWD ePortfolio web app
 
 
@@ -116,6 +116,10 @@ Eric Girouard
  --------------------------------
  CHANGE HISTORY
  --------------------------------
+ ### v0.832 Beta | November 19 2019
+ - Modified /inc/nav.php to make it easier to include classes manually on nav list items.
+ - Modified /inc/footer.php to make it easier to include classes manually on footer nav list items.
+
  ### v0.831 Beta | November 13 2019
  - Added div.images to template: portfolio-multi-item.php.
 

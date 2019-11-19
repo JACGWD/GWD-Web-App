@@ -78,7 +78,7 @@ $customHeaderSubtitle = NULL;
 #  HIGHLIGHT NAVIGATION ITEM FOR CURRENT PAGE
 # ######################################################################
 
-$Highlight_Menu_item = NULL;
+$Highlight_Menu_item = "resume";
 
 
 # ######################################################################

@@ -1,9 +1,9 @@
 <footer>
 <ul class="footer nav">
-  <li><a href="<?php echo $baseFolder ?>about.php" <?php if ($Highlight_Menu_item=="about") echo " class=\"currentpage\""; ?>>About</a></li>
-  <li><a href="<?php echo $baseFolder ?>ca/index.php" <?php if ($Highlight_Menu_item=="ca") echo " class=\"currentpage\""; ?>>Comprehensive Assessment</a></li>
-  <li><a href="<?php echo $baseFolder ?>copyright-notice.php" <?php if ($Highlight_Menu_item=="copyright") echo " class=\"currentpage\""; ?>>Copyright Notice</a></li>
-  <li><a href="<?php echo $baseFolder ?>contact.php" <?php if ($Highlight_Menu_item=="contact") echo " class=\"currentpage\""; ?>>Contact</a></li>
+  <li><a href="<?php echo $baseFolder ?>about.php" class="<?php if ($Highlight_Menu_item=="about") echo "currentpage"; ?>">About</a></li>
+  <li><a href="<?php echo $baseFolder ?>ca/index.php" class="<?php if ($Highlight_Menu_item=="ca") echo "currentpage"; ?>">Comprehensive Assessment</a></li>
+  <li><a href="<?php echo $baseFolder ?>copyright-notice.php" class="<?php if ($Highlight_Menu_item=="copyright") echo "currentpage"; ?>">Copyright Notice</a></li>
+  <li><a href="<?php echo $baseFolder ?>contact.php" class="<?php if ($Highlight_Menu_item=="contact") echo "currentpage"; ?>">Contact</a></li>
 </ul>
 
 <ul class="footer nav social">

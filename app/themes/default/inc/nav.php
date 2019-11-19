@@ -3,16 +3,16 @@
 
 <ul id="menu" hidden>
 
-    <li><a href="<?php echo $baseFolder ?>index.php" <?php if ($Highlight_Menu_item=="home") echo " class=\"currentpage\""; ?>>Home</a></li>
+    <li><a href="<?php echo $baseFolder ?>index.php" class="<?php if ($Highlight_Menu_item=="home") echo "currentpage"; ?>">Home</a></li>
 
-    <li><a href="<?php echo $baseFolder ?>about.php" <?php if ($Highlight_Menu_item=="about") echo " class=\"currentpage\""; ?>>About</a></li>
+    <li><a href="<?php echo $baseFolder ?>about.php" class="<?php if ($Highlight_Menu_item=="about") echo "currentpage"; ?>">About</a></li>
 
-    <li><a href="<?php echo $baseFolder ?>resume.php" <?php if ($Highlight_Menu_item=="resume") echo " class=\"currentpage\""; ?>>Resume</a></li>
+    <li><a href="<?php echo $baseFolder ?>resume.php" class="<?php if ($Highlight_Menu_item=="resume") echo "currentpage"; ?>">Resume</a></li>
 
-    <li><a href="<?php echo $baseFolder ?>web-portfolio.php" <?php if ($Highlight_Menu_item=="web") echo " class=\"currentpage\""; ?>>Web Portfolio</a></li>
+    <li><a href="<?php echo $baseFolder ?>web-portfolio.php" class="<?php if ($Highlight_Menu_item=="webportfolio") echo "currentpage"; ?>">Web Portfolio</a></li>
 
-    <li><a href="<?php echo $baseFolder ?>print-portfolio.php" <?php if ($Highlight_Menu_item=="print") echo " class=\"currentpage\""; ?>>Print Portfolio</a></li>
+    <li><a href="<?php echo $baseFolder ?>print-portfolio.php" class="<?php if ($Highlight_Menu_item=="printportfolio") echo "currentpage"; ?>">Print Portfolio</a></li>
 
-    <li><a href="<?php echo $baseFolder ?>contact.php" <?php if ($Highlight_Menu_item=="contact") echo " class=\"currentpage\""; ?>>Contact</a></li>
+    <li><a href="<?php echo $baseFolder ?>contact.php" class="<?php if ($Highlight_Menu_item=="contact") echo "currentpage"; ?>">Contact</a></li>
 </ul>
 </nav>
