@@ -248,7 +248,7 @@ form input[type=submit] {}
 }
 
 @media only screen and (min-width: 48em) and (orientation : portrait) {
-  /* CSS rules go here */
+  /* CSS rules go here  */
 }
 
 @media only screen and (min-width: 48em) and (orientation : landscape) {

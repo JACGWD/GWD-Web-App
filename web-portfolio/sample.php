@@ -107,10 +107,10 @@ $default_highres_image = "sample_400.png";
 // "logo-collage.png"
 // File name of the default jpg, gif or png file (standard resolution)
 
-$highres_image_3x = "sample_1200.png";
-$highres_image_2x = "sample_800.png";
-$highres_image_1_5x = "sample_600.png";
-$highres_image_1x = "sample_400.png";
+$highres_image_3x = "sample_1200.png 1200w";
+$highres_image_2x = "sample_800.png 800w";
+$highres_image_1_5x = "sample_600.png 600w";
+$highres_image_1x = "sample_400.png 400w";
 
 $highres_alt = NULL;
 // ALT text for the image
