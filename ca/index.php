@@ -1,7 +1,12 @@
 <?php
-require_once  ($_SERVER["DOCUMENT_ROOT"]."/current-grads/billy-poppins/app/config.php");
+# ######################################################################
+#  GWD Web App version 0.84 Beta
+# ######################################################################
+?>
+<?php
+require_once $_SERVER["DOCUMENT_ROOT"]."/app/config.php";
 
-require ($_SERVER["DOCUMENT_ROOT"]."/current-grads/billy-poppins/comprehensive-assessment.php");
+require ($_SERVER["DOCUMENT_ROOT"]."/comprehensive-assessment.php");
 // Why duplicate the page when we can import the original?
 // Useful for managing pages with duplicate content
 ?>

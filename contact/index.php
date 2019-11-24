@@ -1,9 +1,16 @@
 <?php
+# ######################################################################
+#  GWD Web App version 0.84 Beta
+# ######################################################################
+?>
+<?php
 
-require_once  ($_SERVER["DOCUMENT_ROOT"])."/../app/config.php";
+require_once  ($_SERVER["DOCUMENT_ROOT"])."/app/config.php";
 
-$redirectTo = "contact.php";
+# ######################################################################
+#  HEAD TAGS FOR SEO + SOCIAL
+# ######################################################################$redirectTo = "contact.php";
 
-require ($rootTemplates_folder."redirect.php");
+require ($abpath_templates_folder."redirect.php");
 
 ?>

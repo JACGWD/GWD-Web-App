@@ -2,7 +2,7 @@
 require_once ($_SERVER["DOCUMENT_ROOT"]."/app/config.php");
 
 // ---- PATHS ------ //
-$graduatingStudentFolderName = NULL;
+$student_folder_name = NULL;
 
 // ----- HEAD TAGS FOR SEO + SOCIAL ---- //
 $canonical = NULL;
@@ -66,5 +66,5 @@ $mainContentFile = NULL;//
 $ExtraFooterCode = NULL;
 
 // ----- CHOOSE TEMPLATE ---- //
-require ($rootTemplates_folder."page.php");
+require ($abpath_templates_folder."page.php");
 ?>

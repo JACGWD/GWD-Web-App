@@ -1,14 +1,10 @@
 <?php
-require_once  ($_SERVER["DOCUMENT_ROOT"]."/current-grads/billy-poppins/app/config.php");
-
-
 # ######################################################################
-#  DEFINE PATHS
-# ######################################################################
-
-// $graduatingStudentFolderName = NULL;
-// This variable is deprecated and will be removed in future version
-
+#  GWD Web App version 0.84 Beta
+# #######################################################################
+?>
+<?php
+require_once $_SERVER["DOCUMENT_ROOT"]."/app/config.php";
 
 # ######################################################################
 #  HEAD TAGS FOR SEO + SOCIAL
@@ -77,7 +73,7 @@ $ExtraHeaderCode = '<style>
 footer {text-align: left; margin-top: 4em;}
 
 h1::before {
-  background-image: url(/current-grads/billy-poppins/app/themes/default/css/style_images/shock.jpg);
+  background-image: url(//app/themes/default/css/style_images/shock.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   display: block;
@@ -182,5 +178,5 @@ $raw_custom_sidebar = NULL;
 #  CHOOSE TEMPLATE   ** THIS LINE MUST BE LAST **
 # ######################################################################
 
-require ($rootTemplates_folder."page.php");
+require ($abpath_templates_folder."page.php");
 ?>

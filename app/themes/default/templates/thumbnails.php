@@ -1,8 +1,11 @@
-<?php require_once $_SERVER["DOCUMENT_ROOT"]."/current-grads/billy-poppins/app/config.php";
+<?php
+# ######################################################################
+#  GWD Web App version 0.84 Beta
+# ######################################################################
+?>
+<?php require_once $_SERVER["DOCUMENT_ROOT"]."/app/config.php";
 
-
-
-require ($rootIncludes_folder. "header.php"); ?>
+require ($abpath_includes_folder. "header.php"); ?>
 
 <h1><?php echo($h1); ?></h1>
 
@@ -27,28 +30,34 @@ echo($top_main_content);
 
 	echo '">'."\r\n";
 
-    echo "  <a href=\"".$single_thumb['highres_link']."\">"."\r\n";
+    echo "<a href=\"".$single_thumb['highres_link']."\">"."\r\n";
 
-    echo "     <img srcset=\"" .$portfolioImgFolder. $single_thumb['thumb_image_1x'].", ". "\r\n".
-							   $portfolioImgFolder. $single_thumb['thumb_image_1.5x'].", ". "\r\n".
-							   $portfolioImgFolder. $single_thumb['thumb_image_2x'].", ". "\r\n".
-							   $portfolioImgFolder. $single_thumb['thumb_image_3x']. "\"". "\r\n".
+    echo "<img srcset=\"" .$img_folder. $single_thumb['thumb_image_1x'].", ". "\r\n".
+							   $img_folder. $single_thumb['thumb_image_1.5x'].", ". "\r\n".
+							   $img_folder. $single_thumb['thumb_image_2x'].", ". "\r\n".
+							   $img_folder. $single_thumb['thumb_image_3x']. "\"". "\r\n". "\r\n".
+
 							  'sizes="';
 							  if (isset($single_thumb['thumb_sizes'])) {echo " " . $single_thumb['thumb_sizes'];} else {echo $defaultSrcSetSizes;}
+                // The browser ignores everything after the first matching condition in sizes, so be careful how you order the media conditions.
+
 							  echo "\"". "\r\n";
-							  echo
-							   "src=\"" .$portfolioImgFolder. $single_thumb['thumb_image_default']. "\"".  "\r\n". "
-							   alt=\"" .$single_thumb['thumb_alt'] . "\"" . ">"."\r\n";
+							  echo "\r\n".
+							   "src=\"" .$img_folder. $single_thumb['thumb_image_default']. "\"".  "\r\n".
+							   "alt=\"" .$single_thumb['thumb_alt'] . "\" "."\r\n".
+                 "height=\"" . $single_thumb['thumb_default_image_height']. "\" ". "\r\n".
+                 "width=\"" . $single_thumb['thumb_default_image_width']. "\"". ">"."\r\n";
 
-    echo "  </a>"."\r\n"."\r\n";
 
-    echo "  <figcaption class=\"thumb-caption\">"."\r\n";
+    echo "</a>"."\r\n"."\r\n";
 
-    echo "  <a href=\"" . $single_thumb['highres_link'] . "\">"."\r\n";
+    echo "<figcaption class=\"thumb-caption\">"."\r\n";
+
+    echo "<a href=\"" . $single_thumb['highres_link'] . "\">"."\r\n";
 
 	echo "   " . $single_thumb['thumb_caption'] . "</a>"."\r\n";
 
-	echo "  </figcaption>"."\r\n";
+	echo "</figcaption>"."\r\n";
 
     echo "</figure>"."\r\n";
 
@@ -72,7 +81,7 @@ echo($top_main_content);
 $clean_custom_sidebar = addslashes($raw_custom_sidebar);
 $custom_sidebar = stripslashes($clean_custom_sidebar);
 
-if (isset($raw_custom_sidebar)) {echo ("<aside>"."\r\n".$custom_sidebar."\r\n"."</aside>"."\r\n"."\r\n");} else require($rootIncludes_folder. "default-sidebar.php");
+if (isset($raw_custom_sidebar)) {echo ("<aside>"."\r\n".$custom_sidebar."\r\n"."</aside>"."\r\n"."\r\n");} else require($abpath_includes_folder. "default-sidebar.php");
 
-require($rootIncludes_folder. "footer.php");
+require($abpath_includes_folder. "footer.php");
 ?>

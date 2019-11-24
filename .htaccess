@@ -91,7 +91,7 @@
 #
 # https://httpd.apache.org/docs/current/mod/core.html#errordocument
 
-ErrorDocument 404 /current-grads/billy-poppins/404.php
+ErrorDocument 404 /404.php
 
 # ----------------------------------------------------------------------
 # | Error prevention                                                   |

@@ -1,10 +1,11 @@
+<?php
+# ######################################################################
+#  GWD Web App version 0.84 Beta
+# #######################################################################
+?>
+
 <footer>
-<ul class="footer nav">
-  <li><a href="<?php echo $baseFolder ?>about.php" class="<?php if ($Highlight_Menu_item=="about") echo "currentpage"; ?>">About</a></li>
-  <li><a href="<?php echo $baseFolder ?>ca/index.php" class="<?php if ($Highlight_Menu_item=="ca") echo "currentpage"; ?>">Comprehensive Assessment</a></li>
-  <li><a href="<?php echo $baseFolder ?>copyright-notice.php" class="<?php if ($Highlight_Menu_item=="copyright") echo "currentpage"; ?>">Copyright Notice</a></li>
-  <li><a href="<?php echo $baseFolder ?>contact.php" class="<?php if ($Highlight_Menu_item=="contact") echo "currentpage"; ?>">Contact</a></li>
-</ul>
+<?php require_once $_SERVER["DOCUMENT_ROOT"] . "/app/themes/default/inc/footer-nav.php"; ?>
 
 <ul class="footer nav social">
   <li><a href="#" target="_blank">LinkedIn</a></li>
@@ -13,7 +14,7 @@
   <li><a href="#" target="_blank">Facebook</a></li>
 </ul>
 
-<p>All images and web site content &copy; <?php echo $graduatingStudentName; ?> 2017-<?php echo date("Y"); ?>. All rights reserved for published and unpublished works.</p>
+<p>All images and web site content &copy; <?php echo $student_name; ?> 2017-<?php echo date("Y"); ?>. All rights reserved for published and unpublished works.</p>
 </footer>
 
 

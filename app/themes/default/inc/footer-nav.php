@@ -1,20 +1,14 @@
-<?php
+<?php require_once $_SERVER["DOCUMENT_ROOT"] . "/content/nav/footer-nav.php";
+// includes & requires must be configured as an absolute path
+
 # ######################################################################
 #  GWD Web App version 0.84 Beta
 # #######################################################################
 ?>
-
-<?php require_once $_SERVER["DOCUMENT_ROOT"] . "/content/nav/main-nav.php";
-// includes & requires must be configured as an absolute path
-?>
-<nav class="navigation">
-<button aria-expanded="false" aria-controls="menu" class="hide-text">Menu</button>
-
-<ul id="menu" hidden>
-
+<nav class="footer-nav">
+<ul>
 <?php
-
-foreach  ( $navlinks as $single_link ) {
+foreach  ( $footerNavLinks as $single_link ) {
 echo "<li";
 // open the <li> tag
 
@@ -29,8 +23,6 @@ echo ">".
 "<a href=\"".
 $baseFolder . $single_link['link-to'];
 // Open the anchor and the url path
-
-
 
 
 // ########  Do not add Classes if none are Declared ########  //
@@ -62,11 +54,6 @@ if ($Highlight_Menu_item==$single_link['highlight-menu']) {echo "currentpage". "
 else {echo "\"".">";};
 // Close the class attribute with a quotation mark and bracket
 
-
-
-
-
-
 echo $single_link['link-text'] .
 //print the clickable word inside the anchor
 
@@ -77,9 +64,5 @@ echo "\r\n";
 // Add a return before the next li tag
 }
 ?>
-
 </ul>
 </nav>
-
-
-<!-- if (isset($ThumbFigureClass)) {echo " ". $ThumbFigureClass;} else {echo NULL;}; -->

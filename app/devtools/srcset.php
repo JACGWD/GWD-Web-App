@@ -45,7 +45,7 @@ $description = NULL;
 $keywords = NULL;
 
 
-require($includes_folder. "header.php");
+require($abpath_includes_folder. "header.php");
 
 echo
 "<main>".
@@ -103,8 +103,8 @@ echo
 $clean_custom_sidebar = addslashes($raw_custom_sidebar);
 $custom_sidebar = stripslashes($clean_custom_sidebar);
 
-if (isset($raw_custom_sidebar)) {echo ("<aside>"."\r\n".$custom_sidebar."\r\n"."</aside>"."\r\n"."\r\n");} else require($includes_folder. "default-sidebar.php");
+if (isset($raw_custom_sidebar)) {echo ("<aside>"."\r\n".$custom_sidebar."\r\n"."</aside>"."\r\n"."\r\n");} else require($abpath_includes_folder. "default-sidebar.php");
 
-require($includes_folder. "footer.php");
+require($abpath_includes_folder. "footer.php");
 
 ?>

@@ -1,5 +1,10 @@
 <?php
-require_once  ($_SERVER["DOCUMENT_ROOT"]."/current-grads/billy-poppins/app/config.php");
+# ######################################################################
+#  GWD Web App version 0.84 Beta
+# #######################################################################
+?>
+<?php
+require_once $_SERVER["DOCUMENT_ROOT"]."/app/config.php";
 
 # ######################################################################
 #  HEAD TAGS FOR SEO + SOCIAL
@@ -109,6 +114,11 @@ $multiHighRes = array
 array (
 		'multiHiRes_image_default' => "sample_400.png",
 		// Default is the same as 1x - but without the 400w.
+
+    'multiHiRes_highres_width' => "400",
+    'multiHiRes_highres_height' => "260",
+    // Default 1x size of the image in the web page layout
+
 		'multiHiRes_image_1x' => "sample_400.png 400w",
 		'multiHiRes_image_1.5x' => "sample_600.png 600w",
 		'multiHiRes_image_2x' => "sample_800.png 800w",
@@ -121,6 +131,11 @@ array (
 array (
   'multiHiRes_image_default' => "sample_400.png",
   // Default is the same as 1x - but without the 400w.
+
+  'multiHiRes_highres_width' => "400",
+  'multiHiRes_highres_height' => "260",
+  // Default 1x size of the image in the web page layout
+
   'multiHiRes_image_1x' => "sample_400.png 400w",
   'multiHiRes_image_1.5x' => "sample_600.png 600w",
   'multiHiRes_image_2x' => "sample_800.png 800w",
@@ -148,7 +163,7 @@ $next = NULL;
 
 // For example, if current page is "2.php"
 // previous is "1.php" and next is "3.php"
-// use absolute path: "/current-grads/billy-poppins/ca/ebook.php"
+// use absolute path: "//ca/ebook.php"
 
 
 # ######################################################################
@@ -162,5 +177,5 @@ $custom_sidebar = NULL;
 #  CHOOSE TEMPLATE   ** THIS LINE MUST BE LAST **
 # ######################################################################
 
-require ($rootTemplates_folder."portfolio-multi-item.php");
+require ($abpath_templates_folder."portfolio-multi-item.php");
 ?>

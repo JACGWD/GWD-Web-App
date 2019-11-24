@@ -1,6 +1,10 @@
 <?php
-require_once  ($_SERVER["DOCUMENT_ROOT"]."/current-grads/billy-poppins/app/config.php");
-
+# ######################################################################
+#  GWD Web App version 0.84 Beta
+# #######################################################################
+?>
+<?php
+require_once $_SERVER["DOCUMENT_ROOT"]."/app/config.php";
 
 # ######################################################################
 #  HEAD TAGS FOR SEO + SOCIAL
@@ -115,5 +119,5 @@ $raw_custom_sidebar = NULL;
 #  CHOOSE TEMPLATE   ** THIS LINE MUST BE LAST **
 # ######################################################################
 
-require ($rootTemplates_folder."page.php");
+require ($abpath_templates_folder."page.php");
 ?>

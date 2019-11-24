@@ -1,3 +1,8 @@
+<?php
+# ######################################################################
+#  GWD Web App version 0.84 Beta
+# #######################################################################
+?>
 <!doctype html>
 <html itemscope itemtype="http://schema.org/Article" lang="en" dir="ltr" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml" class="no-js">
 
@@ -126,9 +131,9 @@ if (isset($ExtraHeaderCode)) {echo $ExtraHeaderCode ."\r\n";} else {echo NULL;}
   <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
 <![endif]-->
 
-<?php require($rootIncludes_folder. "nav.php"); ?>
+<?php require($abpath_includes_folder. "nav.php"); ?>
 
 <header<?php if (isset($HeaderClass)) {echo ' class="'. $HeaderClass .'"';} else {echo NULL;} ?>>
-<p class="headerTitle"><?php if (isset($customHeaderTitle)) {echo $customHeaderTitle;} else {echo $DefaultHeaderTitle;} ?></p>
-<p class="headerSubtitle"><?php if (isset($customHeaderSubtitle)) {echo $customHeaderSubtitle;} else {echo $DefaultHeaderSubtitle;} ?></p>
+<p class="headerTitle"><?php if (isset($customHeaderTitle)) {echo $customHeaderTitle;} else {echo $default_header_title;} ?></p>
+<p class="headerSubtitle"><?php if (isset($customHeaderSubtitle)) {echo $customHeaderSubtitle;} else {echo $default_header_subtitle;} ?></p>
 </header>

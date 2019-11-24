@@ -1,5 +1,9 @@
 <?php
-#  --------  CONFIG FILE VERSION 8.31 Beta -------------------- #
+
+# ######################################################################
+#  GWD Web App version 0.84 Beta
+# ######################################################################
+
 
 
 
@@ -10,39 +14,40 @@
 error_reporting(E_ALL);
 	ini_set('display_errors', 1);
 	// DELETE ABOVE TWO LINES WHEN THE WEB SITE IS FINISHED
-	// Also delete the no cache section at the bottom of .htaccess before uplaoding to gwd.ca
+	// **** Also delete the no cache section at the bottom of .htaccess before uplaoding to gwd.ca  **** //
 
 
 # ######################################################################
 #   WILL THIS SITE BE USED IN A SUBFOLDER? (ex: /current-grads/yourname/)
 # ######################################################################
 
-$SwitchRoot = TRUE;
-// Automatically adds /current-grads/ & $graduatingStudentFolderName to all paths
-// Set to TRUE
+$SwitchRoot = FALSE;
+// Automatically adds /current-grads/ & studentlastname-studentfirstname/ to all paths
+// Set to FALSE for building the site at root LEVEL
+// Set to TRUE for building the site at the /current-grads/student-name/ level
 
 
 # ######################################################################
 #   START PERSONAL CONFIGURABLE SECTION
 # ######################################################################
 
-$graduatingStudentFolderName = "billy-poppins/";
+$student_folder_name = "billy-poppins/";
 // firstname-lastname (all lowercase), ** with trailing slash: john-smith/ **
 
-$graduatingStudentName = "Billy Poppins";
+$student_name = "Billy Poppins";
 // When we need to print your name on a page, such as in the footer
 
-$author = $graduatingStudentName;
+$author = $student_name;
 // Who is the author of this web site?
-// Default is same name as $graduatingStudentName;
+// Default is same name as $student_name;
 
 
 # ######################################################################
 #   HEADER TYPOGRAPHY CONTENTS
 # ######################################################################
 
-$DefaultHeaderTitle = "Billy Poppins";
-$DefaultHeaderSubtitle = "Montreal Graphic &amp; Web Designer";
+$default_header_title = "Billy Poppins";
+$default_header_subtitle = "Montreal Graphic &amp; Web Designer";
 // Set the DEFAULT subtitle text inside the <header> tag. You can customize per page on each page.
 // Set the DEFAULT text inside the <header> tag to your name. You can customize per page on each page. Add text inside quotation marks.
 
@@ -83,9 +88,9 @@ $TwitterHandle = NULL;
 $OgURL = getCurrentUrl();
 // DO NOT EDIT
 
-$OgSiteName = 'GWD '. date("Y") .' graduate eportfolio | Work by '. $graduatingStudentName;
+$OgSiteName = 'GWD '. date("Y") .' graduate eportfolio | Work by '. $student_name;
 // Do Not Edit
-// $OgSiteName = 'GWD 2019 graduate eportfolio | Work by '. $graduatingStudentName;
+// $OgSiteName = 'GWD 2019 graduate eportfolio | Work by '. $student_name;
 
 
 # ######################################################################
@@ -147,7 +152,7 @@ $defaultMultiSrcSetSizes = "(max-width: 48em) 100vw, (min-width: 64em) 40vw, (mi
 #   SET THE BASE PATH  // DO NOT EDIT
 # ######################################################################
 
-if ($SwitchRoot) {$baseFolder = getCurrentServer() ."current-grads/" . $graduatingStudentFolderName;} else {
+if ($SwitchRoot) {$baseFolder = getCurrentServer() ."current-grads/" . $student_folder_name;} else {
 	$baseFolder = getCurrentServer();}
 
 
@@ -155,58 +160,39 @@ if ($SwitchRoot) {$baseFolder = getCurrentServer() ."current-grads/" . $graduati
 #   ABSOLUTE PATHS FOR ROOT-LEVEL INCLUDES & REQUIRES  // DO NOT EDIT
 # ######################################################################
 
-if ($SwitchRoot) {$rootTemplates_folder = $_SERVER["DOCUMENT_ROOT"] ."/current-grads/" . $graduatingStudentFolderName ."app/themes/". $theme . "/templates/";} else {
-	$rootTemplates_folder = $_SERVER["DOCUMENT_ROOT"] ."/app/themes/". $theme . "/templates/";}
+if ($SwitchRoot) {$abpath_templates_folder = $_SERVER["DOCUMENT_ROOT"] ."/current-grads/" . $student_folder_name ."app/themes/". $theme . "/templates/";} else {
+	$abpath_templates_folder = $_SERVER["DOCUMENT_ROOT"] ."/app/themes/". $theme . "/templates/";}
 
 
-if ($SwitchRoot) {$rootIncludes_folder = $_SERVER["DOCUMENT_ROOT"] ."/current-grads/" . $graduatingStudentFolderName ."app/themes/". $theme . "/inc/";} else {
-$rootIncludes_folder = $_SERVER["DOCUMENT_ROOT"] ."/app/themes/". $theme . "/inc/";}
+if ($SwitchRoot) {$abpath_includes_folder = $_SERVER["DOCUMENT_ROOT"] ."/current-grads/" . $student_folder_name ."app/themes/". $theme . "/inc/";} else {
+$abpath_includes_folder = $_SERVER["DOCUMENT_ROOT"] ."/app/themes/". $theme . "/inc/";}
 
 
-# ######################################################################
-#   ABSOLUTE PATHS FOR ROOT-LEVEL CONTENT FOLDERS  // DO NOT EDIT
-# ######################################################################
+if ($SwitchRoot) {$abpath_db_records = $_SERVER["DOCUMENT_ROOT"] ."/current-grads/" . $student_folder_name ."content/db-records/";} else {
+$abpath_db_records = $_SERVER["DOCUMENT_ROOT"] . "/content/db-records/";}
 
-if ($SwitchRoot) {$rootAudioFolder = $_SERVER["DOCUMENT_ROOT"] ."/current-grads/" . $graduatingStudentFolderName ."content/audio/";} else {
-	$rootAudioFolder = $_SERVER["DOCUMENT_ROOT"] ."/content/audio/";}
+// Include / Require paths cannot use relative paths: ie $baseFolder or getCurrentServer();
+// $_SERVER["DOCUMENT_ROOT"] returns an absolute path
 
-if ($SwitchRoot) {$rootHTMLFolder = $_SERVER["DOCUMENT_ROOT"] ."/current-grads/" . $graduatingStudentFolderName ."content/db-records/";} else {
-$rootHTMLFolder = $_SERVER["DOCUMENT_ROOT"] ."/content/db-records/";}
-
-if ($SwitchRoot) {$rootImgFolder = $_SERVER["DOCUMENT_ROOT"] ."/current-grads/" . $graduatingStudentFolderName ."content/img/";} else {
-	$rootImgFolder = $_SERVER["DOCUMENT_ROOT"] ."/content/img/";}
-
-if ($SwitchRoot) {$rootPDFFolder = $_SERVER["DOCUMENT_ROOT"] ."/current-grads/" . $graduatingStudentFolderName ."content/pdf/";} else {
-	$rootPDFFolder = $_SERVER["DOCUMENT_ROOT"] ."/content/pdf/";}
-
-if ($SwitchRoot) {$rootSocialFolder = $_SERVER["DOCUMENT_ROOT"] ."/current-grads/" . $graduatingStudentFolderName ."content/social/";} else {
-$rootSocialFolder = $_SERVER["DOCUMENT_ROOT"] ."/content/social/";}
-
-if ($SwitchRoot) {$rootSWFFolder = $_SERVER["DOCUMENT_ROOT"] ."/current-grads/" . $graduatingStudentFolderName ."content/swf/";} else {
-$rootSWFFolder = $_SERVER["DOCUMENT_ROOT"] ."/content/swf/";}
-
-if ($SwitchRoot) {$rootVideoFolder = $_SERVER["DOCUMENT_ROOT"] ."/current-grads/" . $graduatingStudentFolderName ."content/video/";} else {
-$rootVideoFolder = $_SERVER["DOCUMENT_ROOT"] ."/content/video/";}
+// $_SERVER["DOCUMENT_ROOT"] does not automatically add the trailing slash, so we add it here first
 
 
 # ######################################################################
-#   RELATIVE PATHS FOR HTML PATHS  // DO NOT EDIT
+#   RELATIVE PATHS FOR CONTENT FOLDERS  // DO NOT EDIT
 # ######################################################################
 
-if ($SwitchRoot) {$portfolioImgFolder = getCurrentServer() ."current-grads/" . $graduatingStudentFolderName ."content/img/";} else {$portfolioImgFolder = getCurrentServer() ."content/img/";}
+$audio_folder = $baseFolder ."content/audio/";
+$db_records_folder = $baseFolder ."content/db-records/";
+$img_folder = $baseFolder ."content/img/";
+$PDF_folder = $baseFolder ."content/pdf/";
+$social_folder = $baseFolder ."content/social/";
+$SWF_folder = $baseFolder ."content/swf/";
+$video_folder = $baseFolder ."content/video/";
 
-// Include / Require paths cannot use http: ie getCurrentServer();
-// $_SERVER["DOCUMENT_ROOT"] does not add the trailing slash, we add it here first
-// the PHP command $_SERVER["DOCUMENT_ROOT"] returns the server path to the document root
 
-// $portfolioImgFolder = getCurrentServer() . "content/img/";
+$current_grads_folder = getCurrentServer()."current-grads/";
+$current_grads_and_student_name = $current_grads_folder . $student_folder_name;
 
-$currentGradsFolder = $baseFolder . "current-grads/";
-// $currentGradsFolder = $_SERVER["DOCUMENT_ROOT"]."/current-grads/";
-
-$graduatingStudentNamePortfolio = $currentGradsFolder . $graduatingStudentFolderName;
-$graduatingStudentNameHTMLFolder = $graduatingStudentNamePortfolio ."content/db-records/";
-$graduatingStudentNameImgFolder = $graduatingStudentNamePortfolio ."content/img/";
 
 // CONSTANT FORM VALUES
 $formAction = $baseFolder . "contact/sendmail.php";

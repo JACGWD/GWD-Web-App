@@ -1,7 +1,11 @@
-<?php require_once ($_SERVER["DOCUMENT_ROOT"])."/current-grads/billy-poppins/app/config.php";
+<?php
+# ######################################################################
+#  GWD Web App version 0.84 Beta
+# ######################################################################
+
+require_once ($_SERVER["DOCUMENT_ROOT"])."/app/config.php";
 
 /*
-
 	IMPORTANT: If you see this notice in your web browser when you
 	test your feedback form, it means that your web host does not
 	have PHP set up correctly, even if they tell you they have.
@@ -58,7 +62,7 @@
 	system, neither this notice nor anything you see below
 	will ever be sent to your visitor's web browser. */
 
-// ------------- CONFIGURABLE SECTION ------------------------
+// ------------- CONFIGURABLE SECTION ------------------------ //
 
 $want_tel_field = 0;
 $want_addr_field = 0;

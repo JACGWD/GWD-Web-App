@@ -1,14 +1,19 @@
 <?php
-require_once $_SERVER["DOCUMENT_ROOT"]."/current-grads/billy-poppins/app/config.php";
+# ######################################################################
+#  GWD Web App version 0.84 Beta
+# #######################################################################
+?>
+<?php
+require_once $_SERVER["DOCUMENT_ROOT"]."/app/config.php";
 
-require($rootIncludes_folder. "header.php"); ?>
+require($abpath_includes_folder. "header.php"); ?>
 
 <h1><?php echo($h1); ?></h1>
 
 <main<?php if (isset($MainClass)) {echo ' class="'. $MainClass .'"';} else {echo NULL;} ?>>
 	<?php
 
-	addslashes(require ($rootHTMLFolder.$mainContentFile));
+	addslashes(require ($abpath_db_records.$mainContentFile));
 	?>
 
 </main>
@@ -21,9 +26,9 @@ $custom_sidebar = stripslashes($clean_custom_sidebar);
 if (isset($raw_custom_sidebar)) {
 	echo ("<aside>"."\r\n".$custom_sidebar."\r\n"."</aside>"."\r\n"."\r\n");}
 	else
-	require($rootIncludes_folder. "default-sidebar.php");
+	require($abpath_includes_folder. "default-sidebar.php");
 
 
-require($rootIncludes_folder. "footer.php");
+require($abpath_includes_folder. "footer.php");
 
 ?>

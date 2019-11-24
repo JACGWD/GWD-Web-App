@@ -1,9 +1,11 @@
 <?php
 
-require_once  ($_SERVER["DOCUMENT_ROOT"]."/current-grads/billy-poppins/app/config.php");
+require_once $_SERVER["DOCUMENT_ROOT"]."/app/config.php";
 
-$redirectTo = "index.php";
+# ######################################################################
+#  HEAD TAGS FOR SEO + SOCIAL
+# ######################################################################$redirectTo = "index.php";
 
-require ($rootTemplates_folder."redirect.php");
+require ($abpath_templates_folder."redirect.php");
 
 ?>

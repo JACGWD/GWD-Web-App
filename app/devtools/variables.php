@@ -9,16 +9,16 @@
 <body>
 
 <?php
-	require_once ($_SERVER["DOCUMENT_ROOT"])."/current-grads/billy-poppins/app/config.php";
+	require_once ($_SERVER["DOCUMENT_ROOT"])."//app/config.php";
 	// $_SERVER["DOCUMENT_ROOT"] does not add the trailing slash, we add it here first
 	// the PHP command $_SERVER["DOCUMENT_ROOT"] returns the server name, such as https://www.graphicandwebdesign.ca
 
 echo "<h2>Student &amp; Theme Names</h2>";
 echo "<p><strong>\$theme: </strong>". $theme  . "</p>"."\r\n";
-echo "<p><strong>\$graduatingStudentName: </strong>". $graduatingStudentName  . "</p>"."\r\n";
-echo "<p><strong>\$graduatingStudentFolderName: </strong>". $graduatingStudentFolderName  . "</p>"."\r\n";
-echo "<p><strong>\$DefaultHeaderTitle: </strong>". $DefaultHeaderTitle . "</p>"."\r\n";
-echo "<p><strong>\$DefaultHeaderSubtitle: </strong>".  $DefaultHeaderSubtitle . "</p>"."\r\n";
+echo "<p><strong>\$student_name: </strong>". $student_name  . "</p>"."\r\n";
+echo "<p><strong>\$student_folder_name: </strong>". $student_folder_name  . "</p>"."\r\n";
+echo "<p><strong>\$default_header_title: </strong>". $default_header_title . "</p>"."\r\n";
+echo "<p><strong>\$default_header_subtitle: </strong>".  $default_header_subtitle . "</p>"."\r\n";
 
 
 echo "<h2>CSS &amp; Javascript</h2>";
@@ -32,27 +32,25 @@ if ($Enable_JQueryPlugins == True) {echo "<p><strong>\$Enable_JQueryPlugins: </s
 // if ($a > $b) {echo "a is greater than b"; } else {echo "a is NOT greater than b";}
 
 echo "<h2>Absolute Paths (for includes or require)</h2>";
-echo "<p><strong>\$rootTemplates_folder: </strong>". $rootTemplates_folder . "</p>"."\r\n";
-echo "<p><strong>\$rootIncludes_folder: </strong>". $rootIncludes_folder . "</p>"."\r\n";
+echo "<p><strong>\$abpath_templates_folder: </strong>". $abpath_templates_folder . "</p>"."\r\n";
+echo "<p><strong>\$abpath_includes_folder: </strong>". $abpath_includes_folder . "</p>"."\r\n";
+echo "<p><strong>\$abpath_db_records: </strong>". $abpath_db_records . "</p>"."\r\n";
 
-echo "<h2>Absolute Paths for Content Folders</h2>";
-echo "<p><strong>\$rootHTMLFolder: </strong>". $rootHTMLFolder . "</p>"."\r\n";
-echo "<p><strong>\$rootImgFolder: </strong>". $rootImgFolder . "</p>"."\r\n";
-echo "<p><strong>\$rootAudioFolder: </strong>". $rootAudioFolder . "</p>"."\r\n";
-echo "<p><strong>\$rootHTMLFolder: </strong>". $rootHTMLFolder . "</p>"."\r\n";
-echo "<p><strong>\$rootImgFolder: </strong>". $rootImgFolder . "</p>"."\r\n";
-echo "<p><strong>\$rootPDFFolder: </strong>". $rootPDFFolder . "</p>"."\r\n";
-echo "<p><strong>\$rootSocialFolder: </strong>". $rootSocialFolder . "</p>"."\r\n";
-echo "<p><strong>\$rootSWFFolder: </strong>". $rootSWFFolder . "</p>"."\r\n";
-echo "<p><strong>\$rootVideoFolder: </strong>". $rootVideoFolder . "</p>"."\r\n";
+echo "<h2>Relative Paths for Content Folders</h2>";
+echo "<p><strong>\$baseFolder: </strong>". $baseFolder . "</p>"."\r\n";
+echo "<p><strong>\$db_records_folder: </strong>". $db_records_folder . "</p>"."\r\n";
+echo "<p><strong>\$img_folder: </strong>". $img_folder . "</p>"."\r\n";
+echo "<p><strong>\$audio_folder: </strong>". $audio_folder . "</p>"."\r\n";
+echo "<p><strong>\$img_folder: </strong>". $img_folder . "</p>"."\r\n";
+echo "<p><strong>\$PDF_folder: </strong>". $PDF_folder . "</p>"."\r\n";
+echo "<p><strong>\$social_folder: </strong>". $social_folder . "</p>"."\r\n";
+echo "<p><strong>\$SWF_folder: </strong>". $SWF_folder . "</p>"."\r\n";
+echo "<p><strong>\$video_folder: </strong>". $video_folder . "</p>"."\r\n";
 
 
 echo "<h2>HTTP-relative Paths</h2>";
-echo "<p><strong>\$baseFolder: </strong>". $baseFolder . "</p>"."\r\n";
-echo "<p><strong>\$currentGradsFolder: </strong>". $currentGradsFolder . "</p>"."\r\n";
-echo "<p><strong>\$graduatingStudentNamePortfolio: </strong>". $graduatingStudentNamePortfolio . "</p>"."\r\n";
-echo "<p><strong>\$graduatingStudentNameHTMLFolder: </strong>". $graduatingStudentNameHTMLFolder . "</p>"."\r\n";
-echo "<p><strong>\$graduatingStudentNameImgFolder: </strong>". $graduatingStudentNameImgFolder . "</p>"."\r\n";
+echo "<p><strong>\$current_grads_folder: </strong>". $current_grads_folder . "</p>"."\r\n";
+echo "<p><strong>\$current_grads_and_student_name: </strong>". $current_grads_and_student_name . "</p>"."\r\n";
 
 
 echo "<h2>Contact Form Paths</h2>";

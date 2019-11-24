@@ -1,5 +1,10 @@
 <?php
-require_once  ($_SERVER["DOCUMENT_ROOT"]."/current-grads/billy-poppins/app/config.php");
+# ######################################################################
+#  GWD Web App version 0.84 Beta
+# #######################################################################
+?>
+<?php
+require_once $_SERVER["DOCUMENT_ROOT"]."/app/config.php";
 
 # ######################################################################
 #  HEAD TAGS FOR SEO + SOCIAL
@@ -130,6 +135,8 @@ array (
 		'thumb_css_class' => NULL,   // Add a CSS class to a specific thumbnail <figure> tag.
 		'thumb_image_default' => "sample_400.png",
 		// Default is the same as 1x - but without the 400w.
+    'thumb_default_image_width'=> "400",
+    'thumb_default_image_height'=> "267",
 		'thumb_image_1x' => "sample_400.png 400w",
 		'thumb_image_1.5x' => "sample_600.png 600w",
 		'thumb_image_2x' => "sample_800.png 800w",
@@ -138,13 +145,15 @@ array (
 		// Leave NULL to use default values from config.php
   		'thumb_alt' => "This is good alt text",
 		'thumb_caption' => "Business card 1 designed for Acme Inc",
-		'highres_link' => "/current-grads/billy-poppins/print-portfolio/sample.php"),
+		'highres_link' => "/web-portfolio/sample.php"),
 
 
 array (
 		'thumb_css_class' => NULL,   // Add a CSS class to a specific thumbnail <figure> tag.
 		'thumb_image_default' => "sample_400.png",
 		// Default is the same as 1x - but without the 400w.
+    'thumb_default_image_width'=> "400",
+    'thumb_default_image_height'=> "267",
 		'thumb_image_1x' => "sample_400.png 400w",
 		'thumb_image_1.5x' => "sample_600.png 600w",
 		'thumb_image_2x' => "sample_800.png 800w",
@@ -153,12 +162,14 @@ array (
 		// Leave NULL to use default values from config.php
   		'thumb_alt' => "This is good alt text",
 		'thumb_caption' => "Business card 1 designed for Acme Inc",
-		'highres_link' => "/current-grads/billy-poppins/print-portfolio/sample.php"),
+		'highres_link' => "/web-portfolio/sample.php"),
 
 array (
 		'thumb_css_class' => NULL,   // Add a CSS class to a specific thumbnail <figure> tag.
 		'thumb_image_default' => "sample_400.png",
 		// Default is the same as 1x - but without the 400w.
+    'thumb_default_image_width'=> "400",
+    'thumb_default_image_height'=> "267",
 		'thumb_image_1x' => "sample_400.png 400w",
 		'thumb_image_1.5x' => "sample_600.png 600w",
 		'thumb_image_2x' => "sample_800.png 800w",
@@ -167,12 +178,14 @@ array (
 		// Leave NULL to use default values from config.php
   		'thumb_alt' => "This is good alt text",
 		'thumb_caption' => "Business card 1 designed for Acme Inc",
-		'highres_link' => "/current-grads/billy-poppins/print-portfolio/sample.php"),
+		'highres_link' => "/web-portfolio/sample.php"),
 
 array (
 		'thumb_css_class' => NULL,   // Add a CSS class to a specific thumbnail <figure> tag.
 		'thumb_image_default' => "sample_400.png",
 		// Default is the same as 1x - but without the 400w.
+    'thumb_default_image_width'=> "400",
+    'thumb_default_image_height'=> "267",
 		'thumb_image_1x' => "sample_400.png 400w",
 		'thumb_image_1.5x' => "sample_600.png 600w",
 		'thumb_image_2x' => "sample_800.png 800w",
@@ -181,7 +194,7 @@ array (
 		// Leave NULL to use default values from config.php
   		'thumb_alt' => "This is good alt text",
 		'thumb_caption' => "Business card 1 designed for Acme Inc",
-		'highres_link' => "/current-grads/billy-poppins/print-portfolio/sample.php"),
+		'highres_link' => "/web-portfolio/sample.php"),
 		);
 
 
@@ -189,5 +202,5 @@ array (
 #  CHOOSE TEMPLATE   ** THIS LINE MUST BE LAST **
 # ######################################################################
 
-require ($rootTemplates_folder."thumbnails.php");
+require ($abpath_templates_folder."thumbnails.php");
 ?>
