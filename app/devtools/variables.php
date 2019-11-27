@@ -1,9 +1,13 @@
-
 <!doctype html>
 <html>
 <head>
 <title>Web App variables</title>
-<style>p {font-family: monospace;}</style>
+<style>
+	p {font-family: monospace; margin: 0 0 0.5em 2em; font-size: 1.25em;}
+	h2 {margin: 2em 0 0.5em 0; font-family: Helvetica, Arial, sans-serif;}
+	body {width: 70%; margin: 0 auto; padding: 0 0 3em 0;}
+	strong {color: #82043b;}
+</style>
 </head>
 
 <body>
@@ -12,6 +16,10 @@
 	require_once ($_SERVER["DOCUMENT_ROOT"])."//app/config.php";
 	// $_SERVER["DOCUMENT_ROOT"] does not add the trailing slash, we add it here first
 	// the PHP command $_SERVER["DOCUMENT_ROOT"] returns the server name, such as https://www.graphicandwebdesign.ca
+
+	echo "<h2>Config</h2>";
+	if ($SwitchRoot == True) {echo "<p><strong>\$SwitchRoot: </strong> True";} else {echo "<p><strong>\$SwitchRoot: </strong> False";} "</p>"."\r\n";
+
 
 echo "<h2>Student &amp; Theme Names</h2>";
 echo "<p><strong>\$theme: </strong>". $theme  . "</p>"."\r\n";
@@ -31,6 +39,7 @@ if ($Enable_ModernCSS_Reset == FALSE AND $Enable_Normalize == FALSE) {echo "<p><
 if ($Enable_JQueryPlugins == True) {echo "<p><strong>\$Enable_JQueryPlugins: </strong> True";} else {echo "<p><strong>\$Enable_JQueryPlugins: </strong> False";} "</p>"."\r\n";
 // if ($a > $b) {echo "a is greater than b"; } else {echo "a is NOT greater than b";}
 
+
 echo "<h2>Absolute Paths (for includes or require)</h2>";
 echo "<p><strong>\$abpath_templates_folder: </strong>". $abpath_templates_folder . "</p>"."\r\n";
 echo "<p><strong>\$abpath_includes_folder: </strong>". $abpath_includes_folder . "</p>"."\r\n";
@@ -48,7 +57,8 @@ echo "<p><strong>\$SWF_folder: </strong>". $SWF_folder . "</p>"."\r\n";
 echo "<p><strong>\$video_folder: </strong>". $video_folder . "</p>"."\r\n";
 
 
-echo "<h2>HTTP-relative Paths</h2>";
+echo "<h2>Student Paths</h2>";
+echo "<p>(\$SwitchRoot does not affect these)</p>";
 echo "<p><strong>\$current_grads_folder: </strong>". $current_grads_folder . "</p>"."\r\n";
 echo "<p><strong>\$current_grads_and_student_name: </strong>". $current_grads_and_student_name . "</p>"."\r\n";
 
