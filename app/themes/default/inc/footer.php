@@ -18,7 +18,7 @@
 </footer>
 
 
-<script src="<?php echo $baseFolder ?>app/themes/<?php echo $theme ?>/js/modernizr-3.7.1.min.js"></script>
+<script src="<?php echo $baseFolder ?>app/themes/<?php echo $theme ?>/js/modernizr-jacgwd.min.js"></script>
 <?php // load Modernizr for feature detection (classes added to the html tag) ?>
 
 

@@ -85,7 +85,7 @@ $TwitterHandle = NULL;
 // Add your Twitter name
 // ie @jacgwd
 
-$OgURL = getCurrentUrl();
+$OgURL = get_act_url();
 // DO NOT EDIT
 
 $OgSiteName = 'GWD '. date("Y") .' graduate eportfolio | Work by '. $student_name;
@@ -148,12 +148,30 @@ $custom_highres_sizes = "(max-width: 48em) 100vw, (min-width: 64em) 80vw, (min-w
 # Set the DEFAULT size of your MULTIPLE HIGH RES IMAGES ON ONE PAGE here.
 $defaultMultiSrcSetSizes = "(max-width: 48em) 100vw, (min-width: 64em) 40vw, (min-width: 90em) 35vw, (min-width: 120em) 30vw";
 
+
+# ######################################################################
+#   SWITCH AUTOMATICALLY BETWEEN LOCALHOST AND LIVE SERVER NAMES AND PORTS  // DO NOT EDIT
+# ######################################################################
+
+/**
+     * Get the current URL taking into account https and port number
+     * @link http://css-tricks.com/snippets/php/get-current-page-url/
+     * @version Refactored by Peter
+*/
+function get_act_url() {
+		    $act_url  = ( isset( $_SERVER['HTTPS'] ) && 'on' === $_SERVER['HTTPS'] ) ? 'https' : 'http';
+		    $act_url .= '://' . $_SERVER['SERVER_NAME'];
+		    $act_url .= in_array( $_SERVER['SERVER_PORT'], array( '80', '443' ) ) ? '' : ":" . $_SERVER['SERVER_PORT'];
+		    return $act_url;
+}
+
+
 # ######################################################################
 #   SET THE BASE PATH  // DO NOT EDIT
 # ######################################################################
 
-if ($SwitchRoot) {$baseFolder = getCurrentServer() ."current-grads/" . $student_folder_name;} else {
-	$baseFolder = getCurrentServer();}
+if ($SwitchRoot) {$baseFolder = get_act_url() ."/current-grads/" . $student_folder_name;} else {
+	$baseFolder = get_act_url()."/";}
 
 
 # ######################################################################
@@ -190,7 +208,7 @@ $SWF_folder = $baseFolder ."content/swf/";
 $video_folder = $baseFolder ."content/video/";
 
 
-$current_grads_folder = getCurrentServer()."current-grads/";
+$current_grads_folder = get_act_url()."current-grads/";
 $current_grads_and_student_name = $current_grads_folder . $student_folder_name;
 
 
@@ -200,31 +218,4 @@ $formurl = $baseFolder . "contact.php" ;
 $thankyouurl = $baseFolder . "contact/thank-you.php" ;
 $errorurl = $baseFolder . "contact/error.php" ;
 
-
-# ######################################################################
-#   SWITCH AUTOMATICALLY BETWEEN LOCALHOST AND LIVE SERVER NAMES AND PORTS  // DO NOT EDIT
-# ######################################################################
-
-/**
-     * Get the current URL taking into account https and port number
-     * @link http://css-tricks.com/snippets/php/get-current-page-url/
-     * @version Refactored by @AlexParraSilva
-*/
-    function getCurrentUrl() {
-        $url  = isset( $_SERVER['HTTPS'] ) && 'on' === $_SERVER['HTTPS'] ? 'https' : 'http';
-        $url .= '://' . $_SERVER['SERVER_NAME'];
-        $url .= in_array( $_SERVER['SERVER_PORT'], array('80', '443') ) ? '' : ':' . $_SERVER['SERVER_PORT'];
-        $url .= $_SERVER['REQUEST_URI'];
-        return $url;
-    }
-
-
-function getCurrentServer() {
-			if(isset($_SERVER['HTTPS']))
-			{$http_type = 'https://' . $_SERVER['HTTP_HOST'] . "/";}
-			{$http_type = 'http://'. $_SERVER['HTTP_HOST'] . "/";}
-			return $http_type
-			;}
-
-	$CurrentServer = getCurrentServer();
 ?>

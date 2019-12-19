@@ -139,6 +139,8 @@ https://necolas.github.io/normalize.css/
  - Added app version numbers to all pages (avoids confusion in class).
  - Simplified all variable names.
  - Updated /app/devtools/variables.php
+ - Changed http/s detection in config.php to better work seamlessly in between http and https enabled servers.
+ - Added a custom version of Modernizr (modernizr-jacgwd-min.js) to almost exclusively detect CSS feature support
 
 
 
