@@ -148,6 +148,10 @@ $custom_highres_sizes = "(max-width: 48em) 100vw, (min-width: 64em) 80vw, (min-w
 # Set the DEFAULT size of your MULTIPLE HIGH RES IMAGES ON ONE PAGE here.
 $defaultMultiSrcSetSizes = "(max-width: 48em) 100vw, (min-width: 64em) 40vw, (min-width: 90em) 35vw, (min-width: 120em) 30vw";
 
+# Set default height and width that will be inserted as HTML attributes in the <img> tag when displaying thumbnails
+$thumb_default_image_height = NULL;
+$thumb_default_image_width = NULL;
+
 
 # ######################################################################
 #   SWITCH AUTOMATICALLY BETWEEN LOCALHOST AND LIVE SERVER NAMES AND PORTS  // DO NOT EDIT

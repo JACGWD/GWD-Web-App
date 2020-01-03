@@ -1,11 +1,7 @@
 <?php
-# ######################################################################
-#  GWD Web App version 0.84 Beta
-# ######################################################################
-?>
-<?php
-require_once $_SERVER["DOCUMENT_ROOT"]."/app/config.php";
-# ######################################################################
+require_once  ($_SERVER["DOCUMENT_ROOT"]."/current-grads/billy-poppins/app/config.php");
+
+## ######################################################################
 #  HEAD TAGS FOR SEO + SOCIAL
 # ######################################################################
 
@@ -85,7 +81,7 @@ $Highlight_Menu_item = NULL;
 
 
 # ######################################################################
-#  H1 TITLE
+#  H1 TITLE 
 # ######################################################################
 
 $h1 = NULL;
@@ -102,14 +98,18 @@ $ExtraFooterCode = NULL;
 #  VARIABLES REQUIRED BY THE HIGH RES PORTFOLIO IMAGE TEMPLATE
 # ######################################################################
 
+$HighResFigureClass = NULL;
+// ex: "large"
+// Class name to be added to <figure class="large">
+
 $default_highres_image = "sample_400.png";
 // "logo-collage.png"
 // File name of the default jpg, gif or png file (standard resolution)
 
-$default_highres_width = "400";
-$default_highres_height = "260";
-// Default 1x size of the image in the web page layout
-
+$highres_image_3x = "sample_1200.png 1200w";
+$highres_image_2x = "sample_800.png 800w";
+$highres_image_1_5x = "sample_600.png 600w";
+$highres_image_1x = "sample_400.png 400w";
 
 $highres_alt = NULL;
 // ALT text for the image
@@ -136,7 +136,7 @@ $next = NULL;
 
 // For example, if current page is "2.php"
 // previous is "1.php" and next is "3.php"
-// use absolute path: "//ca/ebook.php"
+// use absolute path: "/current-grads/billy-poppins/ca/ebook.php"
 
 
 # ######################################################################
@@ -150,5 +150,5 @@ $raw_custom_sidebar = NULL;
 #  CHOOSE TEMPLATE   ** THIS LINE MUST BE LAST **
 # ######################################################################
 
-require ($abpath_templates_folder."portfolio-item.php");
+require ($rootTemplates_folder."portfolio-item.php");
 ?>

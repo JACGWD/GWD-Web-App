@@ -143,6 +143,9 @@ array (
 		'thumb_image_3x' => "sample_1200.png 1200w",
 		'thumb_sizes' => NULL,
 		// Leave NULL to use default values from config.php
+		'thumb_custom_image_height' => null,
+		'thumb_custom_image_width' => null,
+		// the two values above are for the html attributes inside the img tag; leave blank for default from config file
   		'thumb_alt' => "This is good alt text",
 		'thumb_caption' => "Business card 1 designed for Acme Inc",
 		'highres_link' => "/print-portfolio/sample.php"),
@@ -160,6 +163,9 @@ array (
 		'thumb_image_3x' => "sample_1200.png 1200w",
 		'thumb_sizes' => NULL,
 		// Leave NULL to use default values from config.php
+		'thumb_custom_image_height' => null,
+		'thumb_custom_image_width' => null,
+		// the two values above are for the html attributes inside the img tag; leave blank for default from config file
   		'thumb_alt' => "This is good alt text",
 		'thumb_caption' => "Business card 1 designed for Acme Inc",
 		'highres_link' => "/print-portfolio/sample.php"),
@@ -176,6 +182,9 @@ array (
 		'thumb_image_3x' => "sample_1200.png 1200w",
 		'thumb_sizes' => NULL,
 		// Leave NULL to use default values from config.php
+		'thumb_custom_image_height' => null,
+		'thumb_custom_image_width' => null,
+		// the two values above are for the html attributes inside the img tag; leave blank for default from config file
   		'thumb_alt' => "This is good alt text",
 		'thumb_caption' => "Business card 1 designed for Acme Inc",
 		'highres_link' => "/print-portfolio/sample.php"),
@@ -192,6 +201,9 @@ array (
 		'thumb_image_3x' => "sample_1200.png 1200w",
 		'thumb_sizes' => NULL,
 		// Leave NULL to use default values from config.php
+		'thumb_custom_image_height' => null,
+		'thumb_custom_image_width' => null,
+		// the two values above are for the html attributes inside the img tag; leave blank for default from config file
   		'thumb_alt' => "This is good alt text",
 		'thumb_caption' => "Business card 1 designed for Acme Inc",
 		'highres_link' => "/print-portfolio/sample.php"),

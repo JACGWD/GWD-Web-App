@@ -45,8 +45,17 @@ echo($top_main_content);
 							  echo "\r\n".
 							   "src=\"" .$img_folder. $single_thumb['thumb_image_default']. "\"".  "\r\n".
 							   "alt=\"" .$single_thumb['thumb_alt'] . "\" "."\r\n".
-                 "height=\"" . $single_thumb['thumb_default_image_height']. "\" ". "\r\n".
-                 "width=\"" . $single_thumb['thumb_default_image_width']. "\"". ">"."\r\n";
+
+                 "height=\""; if (isset($single_thumb['thumb_custom_image_height']))
+                 {echo " " . $single_thumb['thumb_custom_image_height'];}
+                 else {echo $thumb_default_image_height;};
+                 echo "\" ". "\r\n".
+
+                 "width=\"";
+                 if (isset($single_thumb['thumb_custom_image_width']))
+                 {echo " " . $single_thumb['thumb_custom_image_width'];}
+                 else {echo $thumb_default_image_width;};
+                 echo "\"". ">"."\r\n";
 
 
     echo "</a>"."\r\n"."\r\n";
