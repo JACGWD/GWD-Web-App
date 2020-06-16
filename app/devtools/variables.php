@@ -1,3 +1,8 @@
+<?php
+# ######################################################################
+#  GWD Web App version 0.85 Beta
+# #######################################################################
+?>
 <!doctype html>
 <html>
 <head>
@@ -13,7 +18,7 @@
 <body>
 
 <?php
-	require_once ($_SERVER["DOCUMENT_ROOT"])."//app/config.php";
+	require_once ($_SERVER["DOCUMENT_ROOT"])."/app/config.php";
 	// $_SERVER["DOCUMENT_ROOT"] does not add the trailing slash, we add it here first
 	// the PHP command $_SERVER["DOCUMENT_ROOT"] returns the server name, such as https://www.graphicandwebdesign.ca
 
@@ -62,6 +67,8 @@ echo "<p>(\$SwitchRoot does not affect these)</p>";
 echo "<p><strong>\$current_grads_folder: </strong>". $current_grads_folder . "</p>"."\r\n";
 echo "<p><strong>\$current_grads_and_student_name: </strong>". $current_grads_and_student_name . "</p>"."\r\n";
 
+echo "<h2>Social Media / Current Page Paths</h2>";
+echo "<p><strong>\$current_page_path: </strong>". $current_page_path . "</p>"."\r\n";
 
 echo "<h2>Contact Form Paths</h2>";
 echo "<p><strong>\$formurl: </strong>". $formurl . "</p>"."\r\n";
@@ -74,6 +81,7 @@ echo "<p><strong>SERVER[\"\$_SERVER['HTTP_HOST']\"]: </strong>". $_SERVER['HTTP_
 echo "<p><strong>SERVER[\"DOCUMENT_ROOT\"]: </strong>". $_SERVER["DOCUMENT_ROOT"] . "</p>"."\r\n";
 echo "<p><strong>SERVER[\"\$_SERVER['PHP_SELF']\"]: </strong>". $_SERVER['PHP_SELF'] . "</p>"."\r\n";
 echo "<p><strong>SERVER[\"\$_SERVER['SERVER_NAME']\"]: </strong>". $_SERVER['SERVER_NAME'] . "</p>"."\r\n";
+echo "<p><strong>SERVER[\"\$_SERVER['REQUEST_URI']\"]: </strong>". $_SERVER['REQUEST_URI'] . "</p>"."\r\n";
 
 
 ?>

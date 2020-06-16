@@ -38,15 +38,16 @@ require ($abpath_includes_folder. "header.php"); ?>
 	</figcaption>
 </figure>
 
-
+<?php require($abpath_includes_folder. "social-sharing.php"); ?>
 
 
 <div class="pagination">
 	<?php if (isset($previous)) {echo '<a href="'. $previous.'">'.'Previous</a>';} else {echo NULL;} ?>
 
-
 	<?php if (isset($next)) {echo '<a href="'. $next.'">'.'Next</a>';} else {echo NULL;} ?>
 </div>
+
+
 
 </main>
 

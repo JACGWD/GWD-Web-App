@@ -1,7 +1,7 @@
 <?php
 
 # ######################################################################
-#  GWD Web App version 0.84 Beta
+#  GWD Web App version 0.85 Beta
 # ######################################################################
 
 
@@ -158,7 +158,7 @@ $thumb_default_image_width = NULL;
 # ######################################################################
 
 /**
-     * Get the current URL taking into account https and port number
+     * Get the current server base URL taking into account https and port number
      * @link http://css-tricks.com/snippets/php/get-current-page-url/
      * @version Refactored by Peter
 */
@@ -168,6 +168,8 @@ function get_act_url() {
 		    $act_url .= in_array( $_SERVER['SERVER_PORT'], array( '80', '443' ) ) ? '' : ":" . $_SERVER['SERVER_PORT'];
 		    return $act_url;
 }
+
+$current_page_path = get_act_url() . $_SERVER['REQUEST_URI'];
 
 
 # ######################################################################
